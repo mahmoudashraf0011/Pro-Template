@@ -7,14 +7,14 @@ export default function Navbar() {
         <div className='container'>
             <div className='navItems'>
                 <div className='navLogo'>
-                     <a href='/'><img src={logo} alt="logo" /></a>
+                     <a href='/Pro-Template/'><img src={logo} alt="logo" /></a>
                 </div>
                 <form className='navForm'>
                     <input type='text' placeholder='Search Here...' />
                 </form>
                 <div className='navIcons'>
-                    <a className='navLogin' href='/login'><i className="fa-regular fa-circle-user"></i> Login</a>
-                    <a className='navCart' href='/cart'><i className="fa-solid fa-cart-shopping"></i> Cart</a>
+                    <a className='navLogin' href='/Pro-Template/login'><i className="fa-regular fa-circle-user"></i> Login</a>
+                    <a className='navCart' href='/Pro-Template/cart'><i className="fa-solid fa-cart-shopping"></i> Cart</a>
                 </div>
             </div>
         </div>
