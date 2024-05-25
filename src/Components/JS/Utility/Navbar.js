@@ -13,7 +13,7 @@ export default function Navbar() {
                     <input type='text' placeholder='Search Here...' />
                 </form>
                 <div className='navIcons'>
-                    <a className='navLogin' href='/Pro-Template/#/login'><i className="fa-regular fa-circle-user"></i> Login</a>
+                    <a href="/login" onclick="window.open('/login', '_self');"><i className="fa-regular fa-circle-user"></i> Login</a>
                     <a className='navCart' href='/Pro-Template/#/cart'><i className="fa-solid fa-cart-shopping"></i> Cart</a>
                 </div>
             </div>
