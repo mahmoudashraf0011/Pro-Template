@@ -12,7 +12,7 @@ export default function RegsiterPage() {
             <input className='regForm_pass' type='password' placeholder='Enter Password...' />
             <button className='regForm_btn'  type='submit'>register</button>
         </form>
-        <p className='regHint'>login Now : <Link to="/login">Register</Link></p>
+        <p className='regHint'>login Now : <Link to="/login">Login</Link></p>
     </div>
   )
 }
