@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.RatingContainer{
+    margin-top: 50px;
+    background-color: #ddd;
+
+}
+.rate{
+
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    padding: 10px;
+}
+.ratingDesc{
+    display: flex;
+    align-items: center;
+
+}
+.ratingTitle{
+   margin-right: 10px;
+}
+.ratingNum{
+    color: orange;
+    margin-right: 5px;
+}
+.ratingAllRate{
+    font-size: 12px;
+    color: gray;
+    margin-top: 14px;
+}
+.ratingPost{
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+}
+.ratingPost
+.ratingUp{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.ratingPost_title{
+    margin-right: 10px;
+    color: gray;
+}
+.ratingComment > textarea{
+    width: 100%;
+    display: block;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    outline: unset;
+    padding: 10px;
+    resize: none;
+}
+.addComment{
+    float: right;
+    outline: unset;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: block;
+    margin-top: 5px;
+    transition: color 0.4s;
+    -webkit-transition: color 0.4s;
+    -moz-transition: color 0.4s;
+    -ms-transition: color 0.4s;
+    -o-transition: color 0.4s;
+}
+.addComment:hover{
+    opacity: 0.5;
+}
+p{
+    margin: 0;
+  }
+.rateItem{
+margin: 0 40px;
+border-bottom: 1px solid #c8c8c8;
+margin-bottom: 15px;
+}
+.rateData{
+    display: flex;
+    margin-top: 10px;
+  
+
+}
+.rateData_name{
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.rateData_star{
+    margin-bottom: 0;
+    margin-left: 10px;
+    color: orange;
+}
+.rateItem_desc{
+    opacity: 0.8;
+}

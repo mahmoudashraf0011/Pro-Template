@@ -1,0 +1,12 @@
+.slider-bg{
+    height: 400px;
+    
+}
+.slider-data {
+    margin-bottom: 100px;
+    margin-right: 180px;
+}
+.slider-data  > h5,.slider-data >p{
+    color: #fff;
+    font-weight: bold;
+}

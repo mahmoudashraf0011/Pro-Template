@@ -1,0 +1,64 @@
+p{
+    padding: 0;
+    margin: 0;
+}
+.UserAddressCard{
+    background-color: #ddd;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    padding: 10px 20px;
+}
+.UserAddressCard_up{
+    display: flex;
+    justify-content: space-between;
+}
+.UserAddressCard_btns > li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+}
+.UserAddressCard_btns > li >a{
+    text-decoration: none;
+    color: #000;
+}
+.UserAddressCard_btns > li:hover{
+    opacity: 0.7;
+}
+.UserAddressCard>p{
+    margin-bottom: 10px;
+}
+.UserAddress_addAddress{
+    width: 20%;
+    margin: auto;
+    text-align: center;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    background-color: #000;
+    padding: 10px 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    text-transform: capitalize;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+}
+.UserAddress_addAddress:hover{
+    opacity: 0.7;
+}

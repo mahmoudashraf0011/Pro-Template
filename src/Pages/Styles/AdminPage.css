@@ -1,0 +1,11 @@
+.AdminPage_items{
+    display: flex;
+ 
+
+}
+.adminsidebar{
+    flex: 1;
+}
+.AdminPage_item{
+    flex: 5;
+}

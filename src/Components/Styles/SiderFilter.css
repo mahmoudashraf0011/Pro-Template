@@ -1,0 +1,33 @@
+.siderFilter > .subform{
+    margin-bottom: 20px;
+}
+.sliderFilter_title{
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.siderFilter_element {
+    margin-bottom: 5px;
+}
+.siderFilter_element > input{
+    cursor: pointer;
+
+}
+.siderFilter_element > label{
+    margin-left: 5px;
+    text-transform: capitalize;
+    color: gray;
+    cursor: pointer;
+}
+.last input{
+    width: 55%;
+}
+.last > .siderFilter_element{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    
+}
+label:hover{
+    color: black;
+}

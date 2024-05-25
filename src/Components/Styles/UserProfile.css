@@ -1,0 +1,58 @@
+
+.UserProfile_card{
+    background-color: #ddd;
+    border: 1px solid #ddd;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: 1px 1px 3px 3px #ddd;
+}
+.UserProfile_Upcard{
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.UserProfile_Upcard > a{
+    text-decoration: none;
+    color: gray;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+}
+.UserProfile_Upcard > a:hover{
+    color: black;
+}
+.UserProfile_changePass_header{
+    margin-bottom: 10px;
+}
+.UserProfile_changePass_submit{
+    display: block;
+    outline: unset;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    padding: 10px 25px;
+    background-color: #000;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    margin-left: 76%;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+}
+.UserProfile_changePass_submit:hover{
+    opacity: 0.5;
+}

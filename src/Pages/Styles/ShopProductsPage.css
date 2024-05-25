@@ -1,0 +1,13 @@
+.shopitems{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+
+}
+.shopitems_filter{
+    margin-right: 30px;
+    flex:1;
+}
+.shopitems_cards{
+    flex: 7;
+}

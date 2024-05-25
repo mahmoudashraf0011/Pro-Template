@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.productDesc{
+    padding-top: 20px;
+}
+.productDesc > h4{
+    font-size: 16px;
+    color: gray;
+    font-weight: bold;
+}
+.productDesc_title{
+    margin-bottom: 5px;
+  
+}
+.productDesc_rate > i{
+    color: orange;
+}
+.productDesc_rate {
+    display: block;
+    margin-bottom: 15px;
+}
+.productDesc_brand > span{
+    font-weight: bold;
+    font-size: 20px;
+}
+.productDesc_colors > div{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right: 7px;
+    margin-bottom: 28px;
+}
+.productDesc_colors > div:first-child{
+    background-color: red;
+}
+.productDesc_colors > div:nth-child(2){
+    background-color: black;
+}
+.productDesc_colors > div:last-child{
+    background-color: blue;
+}
+.productDesc_specific_title{
+    margin-bottom: 12px;
+}
+.productDesc_specific{
+    color: gray;
+    margin-bottom: 30px;
+}
+
+
+.productDesc_data > span,.productDesc_data > button{
+    display: inline-block;
+    border: 1px solid #ddd;
+    width: 150px;
+    height: 50px;
+    margin-right: 20px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.productDesc_data > span{
+    font-size: 18px;
+
+}
+.productDesc_data > button{
+    background-color: #000;
+    color: #fff;
+    transition:opacity 0.5s ;
+    -webkit-transition:opacity 0.5s ;
+    -moz-transition:opacity 0.5s ;
+    -ms-transition:opacity 0.5s ;
+    -o-transition:opacity 0.5s ;
+}
+.productDesc_data > button:hover{
+    opacity: 0.7;
+}

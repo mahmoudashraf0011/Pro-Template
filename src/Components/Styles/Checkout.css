@@ -1,0 +1,54 @@
+.choosePaymentWays{
+    background-color: #ddd;
+    padding: 30px 10px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    margin-bottom: 10px
+}
+.choosePaymentWays > .choosePaymentWay:first-child{
+    margin-bottom: 20px;
+}
+.choosePaymentWay{
+
+    font-weight: bold;
+}
+.choosePaymentWay > input{
+    margin-right: 10px;
+}
+.down{
+    display: inline-block;
+    border: 1px solid #ccc5c5;
+    padding: 10px;
+    border-radius: 10px;
+    height: 50px;
+    width: 170px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    text-align: center;
+    line-height: 30px;
+    text-transform: capitalize;
+}
+.payment_price{
+    font-size: 20px;
+    margin-right: 10px;
+
+}
+.payment_purchase{
+    font-size: 15px;
+    background-color: #000;
+    color: #fff;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+
+}
+.payment_purchase:hover{
+    opacity: 0.7;
+}

@@ -1,0 +1,11 @@
+.userPage_items{
+    display: flex;
+ 
+
+}
+.usersidebar{
+    flex: 1;
+}
+.userPage_item{
+    flex: 5;
+}

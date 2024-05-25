@@ -1,0 +1,87 @@
+.login{
+   
+}
+.auth{
+    width: 30%;
+    margin: 100px auto;
+    background-color: darkcyan;
+    padding: 30px 10px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    text-align: center;
+}
+.auth >h2{
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+.auth > form > input{
+    width: 90%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 0;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    outline: unset;
+}
+.auth > form > button{
+    border: unset;
+    outline: unset;
+    width: 250px;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color:#313433;
+    color: #fff;
+    letter-spacing: 1px;
+    transition: color 0.5s,background-color 0.5s;
+    -webkit-transition: color 0.5s,background-color 0.5s;
+    -moz-transition: color 0.5s,background-color 0.5s;
+    -ms-transition: color 0.5s,background-color 0.5s;
+    -o-transition: color 0.5s,background-color 0.5s;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.auth > form > button:hover{
+    background-color: #fff;
+    color: black;
+}
+.auth > p{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+.auth > p >a {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #9e9a9a;
+    padding: 7px;
+    transition:background-color 0.5s,border-radius 0.5s;
+    -webkit-transition:background-color 0.5s,border-radius 0.5s;
+    -moz-transition:background-color 0.5s,border-radius 0.5s;
+    -ms-transition:background-color 0.5s,border-radius 0.5s;
+    -o-transition:background-color 0.5s,border-radius 0.5s;
+}
+.auth > p >a:hover{
+    background-color: #000;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}

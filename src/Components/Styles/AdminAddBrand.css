@@ -1,0 +1,53 @@
+.adminAddBrand{
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.brandImgContainer {
+    margin-bottom: 10px;
+}
+.brandImgContainer > img{
+    width: 15%;
+}
+.brandImgContainer > input{
+    margin-left: 10px;
+}
+.addBrandForm > .brandName{
+    width: 80%;
+    display: block;
+    padding: 10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin-bottom: 10px;
+}
+.addBrandSubmit{
+    display: block;
+    outline: unset;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    padding: 10px 25px;
+    background-color: #000;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    margin-left: 64%;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+}
+.addBrandSubmit:hover{
+    opacity: 0.5;
+}

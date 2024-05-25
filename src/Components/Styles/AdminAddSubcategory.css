@@ -1,0 +1,49 @@
+.AdminAddSubcategoryForm{
+    margin-top: 60px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    padding: 15px;
+    box-shadow: 1px 1px 6px 1px #ddd;
+}
+.AdminAddSubcategoryForm > input,.AdminAddSubcategoryForm > select{
+    display: block;
+    width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: 1px solid gray;
+    color: gray;
+    margin-bottom: 10px;
+}
+.AdminAddSubcategoryForm .subCatagorySubmit{
+    display: block;
+    outline: unset;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    padding: 10px 25px;
+    background-color: #000;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    margin-left: 50%;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+  
+}
+.AdminAddSubcategoryForm .subCatagorySubmit:hover{
+    opacity: 0.5;
+}

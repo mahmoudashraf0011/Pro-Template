@@ -1,0 +1,48 @@
+nav{
+    background-color: black;
+    padding: 20px 0;
+}
+.navItems{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.navLogo{
+    cursor: pointer;
+}
+.navForm {
+    flex: 2;
+    text-align: center;
+}
+.navForm > input{
+    width: 90%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 10px;
+    outline: 0;
+    border: unset;
+    text-align: center;
+}
+.navIcons{
+    text-align: center;
+}
+.navIcons > a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+}
+.navIcons > a:hover{
+    opacity: 0.5;
+}

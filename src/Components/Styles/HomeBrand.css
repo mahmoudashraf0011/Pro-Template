@@ -1,0 +1,14 @@
+.brand_items{
+display: grid;
+grid-template-columns: repeat(6,1fr);
+grid-gap: 30px;
+    
+}
+.brand_item{
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+.brand_item_bg > img{
+    width: 90%;
+    background-color: #ddd;
+}
