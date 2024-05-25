@@ -31,7 +31,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route index element={<HomePage />}/>
           <Route path="/login" element={<LoginPage />}/>
@@ -58,7 +58,7 @@ function App() {
           <Route path="/user/profile" element={<UserProfilePage />}/>     
           <Route path="/user/edit-profile" element={<UserEditProfilePage />}/>     
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
       <Footer />
     </div>
 
