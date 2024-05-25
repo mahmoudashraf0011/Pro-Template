@@ -1,7 +1,7 @@
 import React from 'react'
 import Multiselect from 'multiselect-react-dropdown';
 import avatar from '../../../../images/other/avatar.png'
-import './../../../Styles/AdminAddProduct.css'
+import './../../../Styles/Admin/AdminAddProduct.css'
 export default function AdminAddProduct() {
     const onSelect = () => {
 

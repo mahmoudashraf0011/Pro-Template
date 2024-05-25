@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../Styles/SiderFilter.css'
+import '../../Styles/Utility/SiderFilter.css'
 
 export default function SiderFilter() {
   return (

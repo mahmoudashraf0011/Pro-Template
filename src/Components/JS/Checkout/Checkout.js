@@ -1,7 +1,7 @@
 import React from 'react'
 import SectionTitle from '../Utility/SectionTitle'
 import { Container } from 'react-bootstrap'
-import '../../Styles/Checkout.css'
+import '../../Styles/Checkout/Checkout.css'
 
 export default function Checkout() {
   return (

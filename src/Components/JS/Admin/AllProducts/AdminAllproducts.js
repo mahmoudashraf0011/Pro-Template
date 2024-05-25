@@ -1,6 +1,6 @@
 import React from 'react'
 import AdminAllproductsCard from './AdminAllproductsCard'
-import '../../../Styles/AdminAllproducts.css'
+import '../../../Styles/Admin//AdminAllproducts.css'
 
 export default function AdminAllproducts() {
   return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../../Styles/UserAddAddress.css'
+import '../../../Styles/User/UserAddAddress.css'
 
 export default function UserAddAddress() {
   return (

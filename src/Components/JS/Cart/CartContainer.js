@@ -1,6 +1,6 @@
 import React from 'react'
 import CartItem from './CartItem'
-import '../../Styles/CartContainer.css'
+import '../../Styles/Cart/CartContainer.css'
 import PageTitle from '../Utility/PageTitle'
 import CartCheckout from './CartCheckout'
 export default function CartContainer() {

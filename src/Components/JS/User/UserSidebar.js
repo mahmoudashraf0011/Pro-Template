@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../Styles/UserSidebar.css'
+import '../../Styles/User/UserSidebar.css'
 import { Link } from 'react-router-dom'
 export default function UserSidebar() {
   return (

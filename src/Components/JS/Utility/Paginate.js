@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactPaginate from 'react-paginate';
-import "../../Styles/Paginate.css"
+import "../../Styles/Utility/Paginate.css"
 export default function Paginate() {
 const handlePageClick=()=>{};
   return (

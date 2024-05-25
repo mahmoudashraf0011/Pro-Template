@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../Styles/ResultCount.css'
+import '../../Styles/Utility/ResultCount.css'
 
 export default function ResultCount({result}) {
   return (

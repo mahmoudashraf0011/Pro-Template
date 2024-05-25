@@ -1,6 +1,6 @@
 import React from 'react'
 import RatingPost from './RatingPost'
-import '../../Styles/Rating.css'
+import '../../Styles/Rating/Rating.css'
 import RatingList from './RatingList'
 import Paginate from '../Utility/Paginate'
 export default function RatingContainer() {

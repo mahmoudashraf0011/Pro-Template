@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../Styles/GalleryCard.css'
+import '../../Styles/Card//GalleryCard.css'
 import "react-image-gallery/styles/css/image-gallery.css";
 import ImageGallery from "react-image-gallery";
 import product1 from '../../../images/other/mobile1.png'

@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../../Styles/AdminAllorders.css'
+import '../../../Styles/Admin/AdminAllorders.css'
 import AdminAllordersCard from './AdminAllordersCard'
 
 export default function AdminAllorders() {

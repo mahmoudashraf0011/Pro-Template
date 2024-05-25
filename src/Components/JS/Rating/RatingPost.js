@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactStars from "react-rating-stars-component";
-import '../../Styles/Rating.css'
+import '../../Styles/Rating/Rating.css'
 
 export default function RatingPost() {
     const setting = {

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import '../../Styles/SectionTitle.css'
+import '../../Styles/Utility/SectionTitle.css'
 export default function SectionTitle({title,btnTitle,pathing}) {
   return (
     <div className='section_header'>

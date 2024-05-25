@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../Styles/Rating.css'
+import '../../Styles/Rating/Rating.css'
 
 export default function RatingList() {
   return (

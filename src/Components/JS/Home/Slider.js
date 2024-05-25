@@ -1,6 +1,6 @@
 import { Carousel } from 'react-bootstrap'
 import React from 'react'
-import "./../../Styles/Slider.css"
+import "./../../Styles/Home/Slider.css"
 import s1 from "./../../../images/slider/1.avif"
 import s2 from "./../../../images/slider/2.jpg"
 import s3 from "./../../../images/slider/3.jpg"

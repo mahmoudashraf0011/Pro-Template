@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../../Styles/AdminOrdersDetailsClient.css'
+import '../../../Styles/Admin/AdminOrdersDetailsClient.css'
 
 export default function AdminOrdersDetailsClient() {
   return (

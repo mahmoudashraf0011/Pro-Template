@@ -7,7 +7,7 @@ import c3 from '../../../images/catagories/3.png';
 import c4 from '../../../images/catagories/4.png';
 import c5 from '../../../images/catagories/5.png';
 import c6 from '../../../images/catagories/6.png';
-import '../../Styles/HomeCatagory.css'
+import '../../Styles/Catagory/Catagory.css'
 export default function CategoryContainer({title,btnTitle,pathing}) {
   return (
     <section className='catagory'>

@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../../Styles/UserEditProfile.css'
+import '../../../Styles/User/UserEditProfile.css'
 
 export default function UserEditProfile() {
   return (

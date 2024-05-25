@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import '../../Styles/adminSidbar.css'
+import '../../Styles/Admin/adminSidbar.css'
 
 export default function AdminSidbar() {
   return (

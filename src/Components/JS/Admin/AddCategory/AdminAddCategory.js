@@ -1,5 +1,5 @@
 import React from 'react'
-import './../../../Styles/AdminAddCategory.css'
+import './../../../Styles/Admin/AdminAddCategory.css'
 import av from './../../../../images/other/avatar.png'
 
 export default function AdminAddCategory() {

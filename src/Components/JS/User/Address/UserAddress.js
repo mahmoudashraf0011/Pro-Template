@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../../Styles/UserAddress.css'
+import '../../../Styles/User/UserAddress.css'
 import UserAddressCard from './UserAddressCard'
 import { Link } from 'react-router-dom'
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import './../../../Styles/AdminAddBrand.css'
+import './../../../Styles/Admin/AdminAddBrand.css'
 import av from './../../../../images/other/avatar.png'
 
 export default function AdminAddBrand() {

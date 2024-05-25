@@ -18,6 +18,10 @@
     background-color: #ddd;
     padding: 15px;
 }
+.best_item_img{
+    width: 70%;
+    margin: 10px auto
+}
 .best_item_img >a >  img{
     width: 100%;
 }

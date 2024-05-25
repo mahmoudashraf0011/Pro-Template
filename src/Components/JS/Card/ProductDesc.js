@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../Styles/ProductDesc.css'
+import '../../Styles/Card/ProductDesc.css'
 
 export default function ProductDesc() {
   return (

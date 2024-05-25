@@ -1,6 +1,6 @@
 import React from 'react'
 import UserAllOrdersItem from './UserAllOrdersItem'
-import './../../../Styles/UserAllOrders.css'
+import './../../../Styles/User/UserAllOrders.css'
 
 export default function UserAllOrders() {
   return (

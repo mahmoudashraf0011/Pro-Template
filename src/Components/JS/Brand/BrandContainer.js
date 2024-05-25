@@ -3,7 +3,7 @@ import brand1 from '../../../images/other/brand1.png'
 import brand2 from '../../../images/other/brand2.png'
 import brand3 from '../../../images/other/brand3.png'
 import BrandCard from './BrandCard'
-import '../../Styles/HomeBrand.css'
+import '../../Styles/Brand/Brand.css'
 import SectionTitle from '../Utility/SectionTitle'
 export default function BrandContainer({title,btnTitle ,pathing}) {
   return (

@@ -1,6 +1,6 @@
 import React from 'react'
 import GeneralCard from '../../Card/GeneralCard'
-import '../../../Styles/UserFavourite.css'
+import '../../../Styles/User/UserFavourite.css'
 import b1 from './../../../../images/other/item.png'
 export default function UserFavourite() {
   return (

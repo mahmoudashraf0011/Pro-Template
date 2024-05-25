@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../Styles/CategorySearch.css'
+import '../../Styles/Catagory/CategorySearch.css'
 
 export default function CategorySearch() {
   return (

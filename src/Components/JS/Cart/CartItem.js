@@ -1,6 +1,6 @@
 import React from 'react'
 import m from '../../../images/other/mobile.png'
-import '../../Styles/CartContainer.css'
+import '../../Styles/Cart/CartContainer.css'
 export default function CartItem() {
   return (
     <div className='cartItem'>

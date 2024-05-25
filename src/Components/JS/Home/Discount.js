@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../Styles/Discount.css'
+import '../../Styles/Home/Discount.css'
 import bg from "../../../images/other/laptops.png";
 export default function Discount() {
   return (

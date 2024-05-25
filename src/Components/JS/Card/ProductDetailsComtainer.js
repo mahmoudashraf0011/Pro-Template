@@ -1,7 +1,7 @@
 import React from 'react'
 import GalleryCard from './GalleryCard'
 import ProductDesc from './ProductDesc'
-import '../../Styles/ProductDetailsComtainer.css'
+import '../../Styles/Card/ProductDetailsComtainer.css'
 
 export default function ProductDetailsComtainer() {
   return (

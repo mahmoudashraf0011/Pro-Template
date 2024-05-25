@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../../Styles/AdminAddSubcategory.css'
+import '../../../Styles/Admin/AdminAddSubcategory.css'
 
 export default function AdminAddSubcategory() {
   return (
