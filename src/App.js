@@ -34,7 +34,7 @@ function App() {
       <HashRouter>
         <Routes>
           <Route index element={<HomePage />}/>
-          <Route path="/login" element={<LoginPage />}/>
+          <Route path="/Pro-Template/#/login" element={<LoginPage />}/>
           <Route path="/register" element={<RegsiterPage />}/>
           <Route path="/cart" element={<CartPage />}/>
           <Route path="/order/paymentmethod" element={<CheckoutPage />}/>
