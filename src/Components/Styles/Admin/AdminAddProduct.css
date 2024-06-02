@@ -48,29 +48,20 @@
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     border: 1px solid #ddd;
-    cursor: pointer;
-}
-.productColors > ul > li:first-child{
-    background-color: red;
-
-}
-.productColors > ul > li:nth-child(2){
-    background-color: blue;
   
 }
-.productColors > ul > li:nth-child(3){
-    background-color: #000;
 
-}
-.productColors > ul > li:last-child {
+
+.productColors > ul > li.moreColor {
     text-align: center;
     transition:background-color 0.5s ;
     -webkit-transition:background-color 0.5s ;
     -moz-transition:background-color 0.5s ;
     -ms-transition:background-color 0.5s ;
     -o-transition:background-color 0.5s ;
+    cursor: pointer;
 }
-.productColors > ul > li:last-child > i{
+.productColors > ul > li.moreColor > i{
      line-height: 30px;
      transition: color 0.4s;
      -webkit-transition: color 0.4s;
@@ -78,10 +69,10 @@
      -ms-transition: color 0.4s;
      -o-transition: color 0.4s;
 }
-.productColors > ul > li:last-child:hover{
+.productColors > ul > li.moreColor:hover{
   background-color: black;
 }
-.productColors > ul > li:last-child:hover > i{
+.productColors > ul > li.moreColor:hover > i{
     color: #fff;
 }
 .addproductSubmit{
@@ -107,4 +98,7 @@
 }
 .addproductSubmit:hover{
     opacity: 0.5;
+}
+select{
+    cursor: pointer;
 }

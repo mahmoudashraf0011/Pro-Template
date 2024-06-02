@@ -10,7 +10,7 @@
 }
 .AdminAllProduct_items{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
     grid-gap: 30px;
 
 }
@@ -24,8 +24,18 @@
     background-color: #ddd;
     padding: 15px;
 }
+.AdminAllProduct_item_img{
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+    background-color: #fff;
+    padding: 20px;
+
+}
 .AdminAllProduct_item_img >a >  img{
     width: 100%;
+    height: 100%;
+
 }
 .AdminAllProduct_item_fav{
     list-style: none;
@@ -37,6 +47,7 @@
     margin-top: 10px;
     font-size: 20px;
     margin-bottom: 20px;
+    height: 40px;
 }
 .AdminAllProduct_item_more{
     display: flex;
@@ -54,8 +65,9 @@
 .AdminAllProduct_item_modify{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
-.AdminAllProduct_item_modify >button{
+.AdminAllProduct_item_modify >button , .edit > button{
     outline: unset;
     border: unset;
     background-color: unset;
@@ -66,7 +78,7 @@
     -ms-transition: color 0.5s;
     -o-transition: color 0.5s;
 }
-.AdminAllProduct_item_modify >button:hover{
+.AdminAllProduct_item_modify >button:hover,.edit > button:hover{
     color: black;
 }
 .AdminAllProduct_item_img {

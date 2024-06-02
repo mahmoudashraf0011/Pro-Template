@@ -1,0 +1,15 @@
+.ProductsByCategoryPage{
+    margin-top: 155px;
+    background-color:grey;
+ 
+}
+.ProductsByCategoryPage > .container > .best_items{
+    margin-top: 20px;
+}
+.ProductsByCategoryHeader{
+    background-color: #ddd;
+    width: 300px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px;
+}

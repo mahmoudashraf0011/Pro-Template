@@ -18,12 +18,18 @@
     background-color: #ddd;
     padding: 15px;
 }
+
 .best_item_img{
-    width: 70%;
-    margin: 10px auto
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+    background-color: #fff;
+    padding: 20px;
+    
 }
 .best_item_img >a >  img{
     width: 100%;
+    height: 100%;
 }
 .best_item_fav{
     list-style: none;
@@ -35,6 +41,7 @@
     margin-top: 10px;
     font-size: 20px;
     margin-bottom: 20px;
+    height:40px
 }
 .best_item_more{
     display: flex;

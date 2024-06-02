@@ -27,11 +27,20 @@ import UserEditAddressPage from "./Pages/JS/User/UserEditAddressPage";
 import UserAddAddressPage from "./Pages/JS/User/UserAddAddressPage";
 import UserProfilePage from "./Pages/JS/User/UserProfilePage";
 import UserEditProfilePage from "./Pages/JS/User/UserEditProfilePage";
+import AdminEditProductPage from "./Pages/JS/Admin/AdminEditProductPage";
+import AdminAllCategoryPage from "./Pages/JS/Admin/AdminAllCategoryPage";
+import AdminEditCategoryPage from "./Pages/JS/Admin/AdminEditCategoryPage";
+import AdminAllBrandsPage from "./Pages/JS/Admin/AdminAllBrandsPage";
+import AdminEditBrandPage from "./Pages/JS/Admin/AdminEditBrandPage";
+import AdminAllSubcatePage from "./Pages/JS/Admin/AdminAllSubcatePage";
+import AdminEditSubCategoryPage from "./Pages/JS/Admin/AdminEditSubCategoryPage";
+import ProductsByCategoryPage from "./Pages/JS/Products/ProductsByCategoryPage";
+import ProductsByBrandPage from "./Pages/JS/Products/ProductsByBrandPage";
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <HashRouter>
+      <BrowserRouter>
         <Routes>
           <Route index element={<HomePage />}/>
           <Route path="/login" element={<LoginPage />}/>
@@ -42,13 +51,22 @@ function App() {
           <Route path="/allbrand" element={<AllbrandPage />}/>
           <Route path="/allproducts" element={<ShopProductsPage />}/>
           <Route path="/allproducts/:id" element={<ProductDetailsPage />}/>
+          <Route path="/allproduct/category/:id" element={<ProductsByCategoryPage />}/> 
+          <Route path="/allproduct/brand/:id" element={<ProductsByBrandPage />}/>       
           <Route path="/admin/allproducts" element={<AdminAllproductsPage />}/>
-          <Route path="/admin/allorders" element={<AdminAllordersPage />}/>
-          <Route path="/admin/orders/:id" element={<AdminOrdersDetailsPage />}/>
-          <Route path="/admin/add-brand" element={<AdminAddBrandPage />}/>
-          <Route path="/admin/add-category" element={<AdminAddCategoryPage />}/>
-          <Route path="/admin/add-subcategory" element={<AdminAddSubcategoryPage />}/>
           <Route path="/admin/add-product" element={<AdminAddProductPage />}/>
+          <Route path="/admin/edit-product/:id" element={<AdminEditProductPage />}/>
+          <Route path="/admin/allorders" element={<AdminAllordersPage />}/>
+          <Route path="/admin/allcategories" element={<AdminAllCategoryPage />}/>
+          <Route path="/admin/allsubcategories" element={<AdminAllSubcatePage />}/>
+          <Route path="/admin/orders/:id" element={<AdminOrdersDetailsPage />}/>
+          <Route path="/admin/allbrands" element={<AdminAllBrandsPage />}/>
+          <Route path="/admin/add-brand" element={<AdminAddBrandPage />}/>
+          <Route path="/admin/edit-brand/:id" element={< AdminEditBrandPage />}/>         
+          <Route path="/admin/add-category" element={<AdminAddCategoryPage />}/>
+          <Route path="/admin/edit-category/:id" element={<AdminEditCategoryPage />}/>
+          <Route path="/admin/add-subcategory" element={<AdminAddSubcategoryPage />}/>
+          <Route path="/admin/edit-subcategory/:id" element={<AdminEditSubCategoryPage />}/>
           <Route path="/user/allorders" element={<UserAllOrdersPage />}/>     
           <Route path="/user/favourite" element={<UserFavouritePage />}/>     
           <Route path="/user/favourite" element={<UserFavouritePage />}/>     
@@ -56,9 +74,10 @@ function App() {
           <Route path="/user/edit-address" element={<UserEditAddressPage />}/>     
           <Route path="/user/add-address" element={<UserAddAddressPage />}/>     
           <Route path="/user/profile" element={<UserProfilePage />}/>     
-          <Route path="/user/edit-profile" element={<UserEditProfilePage />}/>     
+          <Route path="/user/edit-profile" element={<UserEditProfilePage />}/>  
+
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
       <Footer />
     </div>
 

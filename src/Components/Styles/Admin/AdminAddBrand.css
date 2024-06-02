@@ -10,11 +10,21 @@
 .brandImgContainer {
     margin-bottom: 10px;
 }
-.brandImgContainer > img{
-    width: 15%;
+.brandImgContainer > label{
+    display: block;
+    width: 120px;
+    height: 120px;
 }
-.brandImgContainer > input{
-    margin-left: 10px;
+.brandImgContainer > label> img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.brandImgContainer > h3{
+    padding-left: 2px;
+    font-size: 20px;
+    color: gray;
+    margin-bottom: 15px;
 }
 .addBrandForm > .brandName{
     width: 80%;

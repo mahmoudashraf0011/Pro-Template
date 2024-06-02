@@ -1,0 +1,17 @@
+.ProductsByBrandPage{
+    margin-top: 155px;
+    background-color:grey;
+ 
+}
+.ProductsByBrandPage > .container > .best_items{
+    margin-top: 20px;
+}
+.ProductsByBrandHeader{
+    background-color: #ddd;
+    width: 300px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+  
+}

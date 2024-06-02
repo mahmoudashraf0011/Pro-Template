@@ -8,7 +8,7 @@ import s4 from "./../../../images/slider/4.jpg"
 
 export default function Slider() {
   return (
-    <section className='slider'>
+    <section className='slider' id='home'>
         <Carousel data-bs-theme="white">
             <Carousel.Item className='slider-bg'>
                 <img 

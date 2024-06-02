@@ -7,17 +7,21 @@ import b4 from '../../../images/6.png'
 
 import '../../Styles/Card/Card.css'
 import GeneralCard from './GeneralCard'
+import Loding from '../Utility/Loading'
 
-export default function CardContainer({title,btnTitle,pathing}) {
+export default function CardContainer({title,btnTitle,pathing,products,id}) {
+  console.log(products);
   return (
-    <section className='best'>
+    <section className='best' id={id}>
       <SectionTitle title={title} btnTitle={btnTitle} pathing={pathing}/>
       <div className='container'>
         <div className='best_items'>
-            <GeneralCard imgSrc={b1} title="Amet augue justo" price="122" rate="4.5"/>
-            <GeneralCard imgSrc={b2} title="Amet augue justo" price="122" rate="4.5"/>
-            <GeneralCard imgSrc={b3} title="Amet augue justo" price="122" rate="4.5"/>
-            <GeneralCard imgSrc={b4} title="Amet augue justo" price="122" rate="4.5"/>
+
+            {
+              products?products.map((product,i)=>{
+                return <GeneralCard id={product._id}imgSrc={product.imageCover} title={product.title} price={product.price} rate={product.ratingsQuantity}/>
+              }):<Loding/>
+            }
         </div>
       </div>
     </section>

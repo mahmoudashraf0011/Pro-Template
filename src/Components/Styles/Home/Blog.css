@@ -1,0 +1,97 @@
+.blog{
+    margin-top: 60px;
+}
+.blog_header{
+    text-align: center;
+}
+.item_header > h2{
+    text-transform: capitalize;
+    margin-bottom: 50px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #000;
+    padding: 15px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.blog_items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 40px;
+    align-items: center;
+
+}
+.blog_img {
+   overflow: hidden;
+}
+.blog_img > img{
+    width: 100%;
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -ms-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+    cursor: pointer;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.blog_img > img:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.blog_content{
+    margin-top: 20px;
+}
+.blog_content .blog_date{
+    list-style: none;
+    margin-bottom: 15px;
+}
+.blog_content .blog_date > i{
+    display: inline-block;
+    margin-right: 5px;
+}
+.blog_content .blog_desc{ 
+    font-weight: bold;
+     text-transform: capitalize; 
+     margin-bottom: 15px; transition: color 0.4s; 
+     -webkit-transition: color 0.4s;
+     -moz-transition: color 0.4s;
+     -ms-transition: color 0.4s; 
+      -o-transition: color 0.4s;
+}
+.blog_content .blog_desc:hover{
+    color: #3367AB;
+
+}
+.blog_btn{
+    border: 1px solid #ddd;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    text-transform: capitalize;
+    width: 100%;
+    transition: background-color 0.4s;
+    -webkit-transition: background-color 0.4s;
+    -moz-transition: background-color 0.4s;
+    -ms-transition: background-color 0.4s;
+    -o-transition: background-color 0.4s;
+}
+.blog_btn:hover{
+    background-color: #3367AB;
+}

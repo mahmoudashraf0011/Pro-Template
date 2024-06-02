@@ -1,22 +1,25 @@
 import React from 'react'
-import brand1 from '../../../images/other/brand1.png'
-import brand2 from '../../../images/other/brand2.png'
-import brand3 from '../../../images/other/brand3.png'
 import BrandCard from './BrandCard'
 import '../../Styles/Brand/Brand.css'
 import SectionTitle from '../Utility/SectionTitle'
+import HomeBrandHook from '../../../LogicHooks/Brands/HomeBrandHook'
+import Loding from '../Utility/Loading'
 export default function BrandContainer({title,btnTitle ,pathing}) {
+  const [brand,load]=HomeBrandHook();
   return (
-    <section className='brand'>
+    <section className='brand' id='brands'>
       <SectionTitle title={title} btnTitle={btnTitle} pathing={pathing}/>
       <div className='container'>
         <div className='brand_items'>
-            <BrandCard img={brand1}/>
-            <BrandCard img={brand2}/>
-            <BrandCard img={brand3}/>
-            <BrandCard img={brand2}/>
-            <BrandCard img={brand1}/>
-            <BrandCard img={brand3}/>
+            
+            {
+
+              load==false? brand.data?brand.data.slice(0,5).map((item,i)=>{
+                return <BrandCard img={item.image} key={i} id={item._id}/>
+              }):<Loding/>:null
+
+
+            }
         </div>
       </div>
     </section>

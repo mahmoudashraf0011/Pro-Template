@@ -6,12 +6,15 @@
     padding-top: 20px;
 }
 .productDesc > h4{
-    font-size: 16px;
+    font-size: 20px;
+    text-transform: capitalize;
     color: gray;
     font-weight: bold;
 }
 .productDesc_title{
     margin-bottom: 5px;
+    font-size: 20px;
+    text-transform: capitalize;
   
 }
 .productDesc_rate > i{
@@ -24,6 +27,7 @@
 .productDesc_brand > span{
     font-weight: bold;
     font-size: 20px;
+    text-transform: uppercase;
 }
 .productDesc_colors > div{
     display: inline-block;
@@ -48,6 +52,7 @@
 }
 .productDesc_specific_title{
     margin-bottom: 12px;
+
 }
 .productDesc_specific{
     color: gray;

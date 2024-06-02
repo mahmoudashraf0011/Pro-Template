@@ -36,7 +36,7 @@
     color: #fff;
     text-transform: capitalize;
     margin-bottom: 20px;
-    margin-left: 50%;
+    margin-left: 45%;
     transition: opacity 0.5s;
     -webkit-transition: opacity 0.5s;
     -moz-transition: opacity 0.5s;
@@ -46,4 +46,14 @@
 }
 .AdminAddSubcategoryForm .subCatagorySubmit:hover{
     opacity: 0.5;
+}
+select{
+ width: 20px;
+}
+select > option{
+    background-color: #ddd;
+    font-weight: bold;
+    display: block;
+
+    
 }

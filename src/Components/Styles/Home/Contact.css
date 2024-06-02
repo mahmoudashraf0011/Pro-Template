@@ -1,0 +1,81 @@
+.contact{
+
+    background-image: url("../../../images/contact/1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    height: 520px;
+    margin-top: 30px;
+}
+.contact_data{
+padding-top: 40px;
+}
+.contact_span{
+    background-color: black;
+    color: #fff;
+    padding: 12px;
+    border-radius:5px ;
+    -webkit-border-radius:5px ;
+    -moz-border-radius:5px ;
+    -ms-border-radius:5px ;
+    -o-border-radius:5px ;
+    letter-spacing: 1px;
+   font-weight: bold;
+   margin-bottom: 25px;
+   display: inline-block;
+}
+.contact_title{
+    color: #fff;
+    font-size: 40px;
+    width: 30%;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+
+}
+.contact_desc{
+    color: gray;
+    width: 54%;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+.contact_form > input{
+    width: 40%;
+    padding: 10px;
+    outline: unset;
+   border: unset;
+}
+.contact_form > button{
+    width: 10%;
+    display: inline-block;
+    outline: unset;
+    background-color: black;
+    color: #fff;
+    padding: 12px;
+    border: unset;
+    text-transform: uppercase;
+    transition:background-color 0.4s ;
+    -webkit-transition:background-color 0.4s ;
+    -moz-transition:background-color 0.4s ;
+    -ms-transition:background-color 0.4s ;
+    -o-transition:background-color 0.4s ;
+}
+.contact_form > button:hover{
+    background-color:#3367AB ;
+}
+.accept{
+    width: 51%;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    background-color: #3367AB;
+    text-align: center;
+    color: #fff;
+    line-height: 60px;
+    transition: height 0.7s,opacity 0.5s;
+    -webkit-transition: height 0.7s,opacity 0.5s;
+    -moz-transition: height 0.7s,opacity 0.5s;
+    -ms-transition: height 0.7s,opacity 0.5s;
+    -o-transition: height 0.7s,opacity 0.5s;
+}

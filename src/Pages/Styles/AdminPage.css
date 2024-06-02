@@ -1,3 +1,6 @@
+.AdminPage{
+   margin-top: 150px;
+}
 .AdminPage_items{
     display: flex;
  
@@ -7,5 +10,5 @@
     flex: 1;
 }
 .AdminPage_item{
-    flex: 5;
+    flex: 4;
 }

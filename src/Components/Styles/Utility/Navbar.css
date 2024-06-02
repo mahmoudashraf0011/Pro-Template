@@ -1,11 +1,21 @@
+.navParent{
+    position: fixed;
+    width: 100%;
+    z-index: 100000;
+    top: 0;
+    left: 0;
+}
+
 nav{
     background-color: black;
     padding: 20px 0;
+ 
 }
 .navItems{
     display: flex;
     justify-content: space-between;
     align-items: center;
+  
 
 }
 .navLogo{
@@ -46,3 +56,47 @@ nav{
 .navIcons > a:hover{
     opacity: 0.5;
 }
+
+.navLinks{
+    background-color: #a0a0a0;
+
+}
+
+.navLinks > ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+   
+}
+.navLinks > ul > li{
+    margin-right: 15px;
+    font-size: 18px;
+    text-transform: capitalize;
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -ms-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+}
+.navLinks > ul > li > a{
+    text-decoration: none;
+    color:black;
+    transition: color 0.4s;
+    -webkit-transition: color 0.4s;
+    -moz-transition: color 0.4s;
+    -ms-transition: color 0.4s;
+    -o-transition: color 0.4s;
+    font-weight: bold;
+}
+.navLinks > ul > li:hover{
+    background-color: #000;
+
+}
+.navLinks > ul > li:hover > a{
+   color: #fff;
+}
+

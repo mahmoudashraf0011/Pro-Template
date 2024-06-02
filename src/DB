@@ -1,0 +1,113 @@
+- Catagories
+    1- mobiles
+        - Phone 7
+        - Tablet 3
+    2- TVs 10
+    3- Computers 
+        - Laptop 7
+        - pc 3
+    4- Electronics 10
+    5- clothes
+        - dress 3
+        - suits 3
+        - TShirt 3
+    6- accessories
+        - mobile 5
+        - computer 5
+    7- furnitures
+        - chair 5
+        - bad 3
+        - table 2
+    8- cameras 10
+    9- watches 10
+    10- gaming 10
+
+  
+    Brands
+     - phone
+        1- apple
+        2- samsung
+    - tablets
+        1- apple
+        2- samsung
+    - TVs
+        1- Fresh
+        2- Sony
+        3- Tornodo
+        4- Toshiba
+        5- Samsung
+        6- Unionaire 
+    - laptop
+        1- HP
+        2- Dell
+        3- Lenovo
+    - pc
+       1 - HP
+       2 - Dell
+    - electronics
+        1- fresh
+        2- Toshiba
+        3- Tornado
+    - clothes
+       1 - Cristal
+       2 - Fiber
+    - accessories
+        1 - apple
+        2 - samsung
+    - furniture
+       1 - Rango
+       2 - Fashion
+    - cameras
+        1- D-Link
+        2- Huawei
+    - watches
+        1- Fashion
+        2- Casio
+    - gaming
+        1- XBOX
+        2- Sony
+
+- all Cates
+    1- mobiles
+    2- TVs 10
+    3- Computers 
+    4- Electronics 10
+    5- clothes
+    6- accessories
+    7- furnitures
+    8- cameras 10
+    9- watches 10
+    10- gaming 10
+
+- all subCates
+    1- Phone 
+    2- Tablet 
+    3- laptop
+    3- pc
+    4- dress
+    5- suits
+    6- Shirt
+    7- mobile accessories
+    8- computer accessories
+    9- chair
+    10- table
+    11- tables
+
+- all Brands
+    1- apple
+    2- samsung
+    3- Fresh
+    4- Sony
+    5- Tornodo
+    6- Toshiba
+    7- Unionaire 
+    8- HP
+    9- Dell
+    10- Lenovo
+    11- Cristal
+    12- Fiber
+    13- Rango
+    14- Fashion
+    15- D-Link
+    16- Huawei
+    17 -XBOX

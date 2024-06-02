@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export default function GeneralCard({imgSrc,title,price,rate}) {
+export default function GeneralCard({imgSrc,title,price,rate,id}) {
   return (
     <div className='best_item'>
       <div className='best_item_img'>
-        <Link to="/allproducts/:id"><img src={imgSrc} alt="best" /></Link>
+        <Link to={`/allproducts/${id}`}><img src={imgSrc} alt="best" /></Link>
       </div>
       <li className='best_item_fav'><i className="fa-regular fa-heart"></i></li>
       <h3 className='best_item_title'>{title}</h3>

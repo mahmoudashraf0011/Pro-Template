@@ -1,3 +1,6 @@
+.shopPage{
+    margin-top: 151px;
+}
 .shopitems{
     display: flex;
     justify-content: space-between;
@@ -5,9 +8,17 @@
 
 }
 .shopitems_filter{
-    margin-right: 30px;
+    margin-right: 70px;
     flex:1;
+ 
+  
 }
 .shopitems_cards{
-    flex: 7;
+    flex: 5;
+
+}
+.special-items{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+justify-content: space-between;
 }

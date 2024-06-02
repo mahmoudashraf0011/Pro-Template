@@ -1,0 +1,36 @@
+1- Home Page //
+2- login Page //
+3- Register Page //
+4- All Category Page //
+5- All Brand Page //
+6- View Products Search Page //
+7- Product Details Page //
+8- Cart Page //
+9- Payment Methoud Page //
+10- Admin-All Products Page 
+11- Admin-All Orders Page
+12- Admin-Add Brand page
+13- Admin Add Category Page
+14- Admin-Add SubCategoey Page
+15- Admin-Add Product Page
+16- User-All Orders page
+17- User-Favorite Products Page
+18- User-Address ( View) Page
+19- User-Address (Add Edit) Page
+20- User-Profile Page
+---------------------------------
+Redux
+1- Basic                             =>      07 lesson
+2- Category Section CRUD             =>      12 lesson
+3- Brand Section CRUD                =>      05 lesson
+4- SubCategory Section CRUD          =>      04 lesson
+5- Admin                             =>      13 lesson
+6- Products Search Filtration        =>      12 lesson
+7- Review CRUD                       =>      17 lesson
+8- Coupons - User Profile            =>      21 lesson
+9- Shopping Cart                     =>      15 lesson
+10- Permission (Routing)             =>      09 lesson
+11- Complete Cash Order              =>      14 lesson
+12- Complete Order Payment - Visa    =>      04 lesson
+Total                                =>      133 lesson
+

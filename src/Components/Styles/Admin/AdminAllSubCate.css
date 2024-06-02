@@ -1,0 +1,57 @@
+.AdminSubcates_items{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+}
+.SubcateItem{
+    cursor: pointer;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+.SubcateItemImg {
+    height: 170px;
+ 
+    width: 170px;
+    margin: auto;
+    margin-bottom: 20px;
+
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    padding: 25px;
+
+}
+.SubcateItemImg > img{
+    width: 100%;
+    height: 100%;
+
+
+
+
+}
+.SubcateItemTitle{
+    text-align: center;
+    text-transform:uppercase;
+    font-weight: bold;
+    font-size: 20px;
+}
+.SubcateItemBtns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.changeCat{
+    background-color: unset;
+    border: unset;
+    color: gray;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+}
+.changeCat:hover{
+    color: #000;
+}
