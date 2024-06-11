@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import av from './../../images/other/avatar.png'
 import { addCategoryAction } from '../../redux/actions/Category/allCategoryAction';
 import Notify from '../../Components/JS/Utility/Notify';
+import { useNavigate } from 'react-router-dom';
 
 export default function AddCategoryHook() {
   const [name,setName]=useState("");
@@ -10,6 +11,8 @@ export default function AddCategoryHook() {
   const [selectedFile,setSelectedFile]=useState(null);
   const [load,setLoad]=useState(true);
   const [press,setPress]=useState(false);
+  
+  const navigate=useNavigate();
   const dispatch=useDispatch();
   const res=useSelector(state=> state.allCategory.category);
 
@@ -55,11 +58,16 @@ export default function AddCategoryHook() {
       }, 3000);
       if(res.status === 201){
         Notify("The category is added successfully!","success")
+        setTimeout(() => {
+          window.location.href="/admin/allcategories";
+        }, 2000)
+        
+      
        }else{
         Notify("Failed to add category!","error")
 
        }
-       console.log(res);
+  
        setLoad(true)
     }
   },[load])

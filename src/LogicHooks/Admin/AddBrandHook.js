@@ -55,6 +55,9 @@ export default function AddBrandHook() {
       }, 3000);
       if(res.status === 201){
         Notify("The brand is added successfully!","success")
+        setTimeout(() => {
+          window.location.href="/admin/allbrands";
+        }, 2000)
        }else{
         Notify("Failed to add brand!","error")
 

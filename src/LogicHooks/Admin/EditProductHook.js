@@ -5,7 +5,8 @@ import { allBrandAction } from '../../redux/actions/Brand/allBrandAction';
 import { getAllSubCAtegoryForCategoryAction } from '../../redux/actions/Subcategory/subcategoryAction';
 import { addProductAction, getSpecificProductAction, updateProductAction } from '../../redux/actions/Product/ProductAction';
 import Notify from '../../Components/JS/Utility/Notify';
-import baseURL from '../../API/baseURL';;
+import baseURL from '../../API/baseURL';import { useNavigate } from 'react-router-dom';
+;
 
 export default function EditProductHook(id) {
   // states
@@ -23,13 +24,9 @@ export default function EditProductHook(id) {
   const [showColor, setShowColor] = useState(false);
   const [load,setLoad]=useState(true);
   const [press,setPress]=useState(false);
+  const navigate=useNavigate();
 
-  //Selectors
-  const category=useSelector(state=> state.allCategory.category);
-  const brand=useSelector(state=> state.allBrand.brand);
-  const subCate=useSelector(state=>state.subCategory.subcategory)
-  const res=useSelector(state=> state.products.updateProduct);
-  const product=useSelector(state=> state.products.specificProduct);
+
 
   // Get allCategories && allBrands
   const dispatch=useDispatch();
@@ -42,6 +39,13 @@ export default function EditProductHook(id) {
     run();
 
   },[])
+
+    //Selectors
+  const category=useSelector(state=> state.allCategory.category);
+  const brand=useSelector(state=> state.allBrand.brand);
+  const subCate=useSelector(state=>state.subCategory.subcategory)
+  const res=useSelector(state=> state.products.updateProduct);
+  const product=useSelector(state=> state.products.specificProduct);
 
   useEffect(()=>{
 
@@ -253,8 +257,11 @@ export default function EditProductHook(id) {
       if(load==false){
           setPress(false)
           if(res){
-            if(res.status === 200){
+            if(res.status === 200){           
                 Notify("Product is Updated successfully!","success")
+                setTimeout(() => {
+                    navigate("/admin/allproducts")
+                   }, 2000)
                }else{
                 Notify("Failed to updated product!","error")
         

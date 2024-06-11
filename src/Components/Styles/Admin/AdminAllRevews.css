@@ -1,0 +1,87 @@
+.adminReviewItems{
+
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+.adminReviewItem{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    width: 100%;
+    border: 10px solid 1px;
+    background-color:#ddd;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 15px;
+}
+.adminReviewItem p{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+}
+.adminReviewItem i{
+    color: orange;
+}
+.adminReviewItem_product_img{
+    width: 24%;
+    display: block;
+    text-align: center;
+    margin-left: 40%;
+    margin-bottom: 12px;
+
+}
+.adminReviewItem_product_img > img{
+    width: 100%;
+    display: block;
+    text-align: center;
+
+
+}
+.adminReviewItem_product{
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.adminReviewItem_data > p{
+    font-weight: bold;
+    margin-bottom: 7px;
+    font-size: 20px;
+}
+.adminReviewItem_data > p > span{
+    font-weight: lighter;
+}
+.adminReviewItem_product_desc > h4{
+    text-transform: capitalize;
+}
+.adminReviewItem_product_desc > p{
+    margin-bottom: 5px;
+}
+.deleteBtn{
+    padding: 10px;
+    background-color: #000;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    color: #fff;
+    margin-top: 30px;
+    transition: opacity 0.4s;
+    -webkit-transition: opacity 0.4s;
+    -moz-transition: opacity 0.4s;
+    -ms-transition: opacity 0.4s;
+    -o-transition: opacity 0.4s;
+}
+.deleteBtn:hover{
+    opacity: 0.5;
+}

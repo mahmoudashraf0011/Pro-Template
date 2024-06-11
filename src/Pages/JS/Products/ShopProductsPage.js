@@ -10,10 +10,12 @@ import ShopProductHook from '../../../LogicHooks/Products/ShopProductHook'
 import Loding from '../../../Components/JS/Utility/Loading'
 import { useDispatch } from 'react-redux'
 import { getProductsPagesAction } from '../../../redux/actions/Product/ProductAction'
+import AllFavHook from '../../../LogicHooks/Favourite/AllFavHook'
 export default function ShopProductsPage() {
 
   const [items,pagintate,length,onPress,getData] = ShopProductHook();
 
+  const [favitems,item] =AllFavHook();
 
 
   return (
@@ -29,8 +31,8 @@ export default function ShopProductsPage() {
                 <div className='best_items special-items'>
                     {
                       items?items.map((product,i)=>{
-                        return <GeneralCard key={i} id={product._id}imgSrc={product.imageCover} title={product.title} price={product.price} rate={product.ratingsQuantity}/>
-                      }):<Loding/>
+                        return <GeneralCard product={product} favitems={favitems} key={i} id={product._id}imgSrc={product.imageCover} title={product.title} price={product.price} rate={product.ratingsAverage?product.ratingsAverage:0}/>
+                      }):<Loding/> 
                     }
                 </div>
             </div>

@@ -9,7 +9,10 @@ import { allCategoryAction, getCategoriesPagesAction } from '../../redux/actions
     const dispatch=useDispatch();
 
     useEffect(()=>{
-      dispatch(allCategoryAction(8));
+      const run=async()=>{
+        await dispatch(allCategoryAction(8));
+      }
+      run();
     },[])
   
     const categories=useSelector(state=> state.allCategory.category);
@@ -18,6 +21,7 @@ import { allCategoryAction, getCategoriesPagesAction } from '../../redux/actions
    
       if(categories.data){
          items= categories.data;
+
   
       }else{
         items=[]
@@ -28,7 +32,7 @@ import { allCategoryAction, getCategoriesPagesAction } from '../../redux/actions
   
   let pagintate=[]
 try{
-  if(categories.data){
+  if(categories){
     pagintate= categories.paginationResult.numberOfPages; 
     
       }else{
@@ -39,9 +43,14 @@ try{
 
     }
 
+    
+    const onPress=async (page)=>{
+     await dispatch(getCategoriesPagesAction(8,page))
+    }
 
-    const onPress=(page)=>{
-      dispatch(getCategoriesPagesAction(8,page))
+    //update all categroies imagse
+    if(items){
+      console.log(items)
     }
     return [items,pagintate,onPress]
  }

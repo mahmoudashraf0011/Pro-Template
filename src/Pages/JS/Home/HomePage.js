@@ -12,23 +12,27 @@ import Contact from '../../../Components/JS/Home/Contact'
 import '../../Styles/Home.css'
 export default function HomePage() {
   const [bestProducts,latestProducts,ratedProducts]=HomeProductsHook();
-  // useEffect(()=>{
-  //   const ele=document.querySelector('.up');
-  //   ele.onclick=(e)=>{
-  //     window.scrollTo(0,0);
-  //   }
+  useEffect(()=>{
+    const ele=document.querySelector('.up');
+    ele.onclick=(e)=>{
+      window.scrollTo(0,0);
+    }
 
-  // })
-  // window.onscroll=()=>{
-  //   const ele=document.querySelector('.up');
-  //   if(window.pageYOffset >= 500){
-  //     ele.style.display="block"
-  //   }else{
+  })
+  window.onscroll=()=>{
+    const ele=document.querySelector('.up');
+    try {
+      if(window.pageYOffset >= 500){
+        ele.style.display="block"
+      }else{
+  
+        ele.style.display="none"
+      }
+    } catch (error) {
+      
+    }
 
-  //     ele.style.display="none"
-  //   }
-
-  // }
+  }
 
 
   return (
@@ -44,7 +48,7 @@ export default function HomePage() {
       <Blog />
       <About />
       <Contact />
-    <button className='up'>GO UP</button>
+      <button className='up'>GO UP</button>
     </div>
   )
 }

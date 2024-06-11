@@ -12,7 +12,7 @@ export default function ProductDetailsComtainer() {
       <div className='container'>
         <div className='productDetails_items'>
             <GalleryCard />
-            <ProductDesc />
+            <ProductDesc  />
         </div>
       </div>
     </div>

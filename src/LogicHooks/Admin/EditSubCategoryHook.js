@@ -3,10 +3,12 @@ import { useDispatch, useSelector } from 'react-redux'
 import { allCategoryAction } from '../../redux/actions/Category/allCategoryAction';
 import Notify from '../../Components/JS/Utility/Notify';
 import { addSubCategoryAction, getSpecificSubcategoriesAction, updateSubcategoryAction } from '../../redux/actions/Subcategory/subcategoryAction';
+import { useNavigate } from 'react-router-dom';
 export default function EditSubCategoryHook(id) {
       
 const dispatch=useDispatch();
 
+const navigate=useNavigate();
 
   const [name,setName]=useState("");
   const [load,setLoad]=useState(true);
@@ -78,6 +80,9 @@ const dispatch=useDispatch();
      if(res){
         if(res.status === 200){
           Notify("SubCategory is Updated successfully!","success")
+          setTimeout(() => {
+            navigate("/admin/allsubcategories")
+           }, 2000)
         }else{
           Notify("Failed to updated SubCategory!","error")
 

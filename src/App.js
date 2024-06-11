@@ -1,5 +1,5 @@
 
-import React from "react";
+import React, { useEffect } from "react";
 import './App.css'
 import { BrowserRouter,Routes,Route, HashRouter } from "react-router-dom";
 import HomePage from "./Pages/JS/Home/HomePage";
@@ -36,7 +36,20 @@ import AdminAllSubcatePage from "./Pages/JS/Admin/AdminAllSubcatePage";
 import AdminEditSubCategoryPage from "./Pages/JS/Admin/AdminEditSubCategoryPage";
 import ProductsByCategoryPage from "./Pages/JS/Products/ProductsByCategoryPage";
 import ProductsByBrandPage from "./Pages/JS/Products/ProductsByBrandPage";
+import ForgetPassPage from "./Pages/JS/Auth/ForgetPassPage";
+import AdminAddCouponPage from "./Pages/JS/Admin/AdminAddCouponPage";
+import AdminAllCouponsPage from "./Pages/JS/Admin/AdminAllCouponsPage";
+import AdminEditCouponPage from "./Pages/JS/Admin/AdminEditCouponPage";
+import VeriftyPassPage from "./Pages/JS/Auth/VeriftyPassPage";
+import RestPassPage from "./Pages/JS/Auth/RestPassPage";
+import ProductsBySubCategoryPage from "./Pages/JS/Products/ProductsBySubCategoryPage";
+import AdminAllReviewsPage from "./Pages/JS/Admin/AdminAllReviewsPage";
+import AdminAllUsersPage from "./Pages/JS/Admin/AdminAllUsersPage";
+import AdminCreateUserPage from "./Pages/JS/Admin/AdminCreateUserPage";
+import AdminEditUserProfilePage from "./Pages/JS/Admin/AdminEditUserProfilePage";
+import AdminEditUserPassPage from "./Pages/JS/Admin/AdminEditUserPassPage";
 function App() {
+
   return (
     <div className="App">
       <Navbar />
@@ -45,6 +58,9 @@ function App() {
           <Route index element={<HomePage />}/>
           <Route path="/login" element={<LoginPage />}/>
           <Route path="/register" element={<RegsiterPage />}/>
+          <Route path="/user/forget-password" element={<ForgetPassPage />}/>  
+          <Route path="/user/verifty-password" element={<VeriftyPassPage />}/>  
+          <Route path="/user/rest-password" element={<RestPassPage />}/>  
           <Route path="/cart" element={<CartPage />}/>
           <Route path="/order/paymentmethod" element={<CheckoutPage />}/>
           <Route path="/allcategory" element={<AllcategoryPage />}/>
@@ -52,6 +68,7 @@ function App() {
           <Route path="/allproducts" element={<ShopProductsPage />}/>
           <Route path="/allproducts/:id" element={<ProductDetailsPage />}/>
           <Route path="/allproduct/category/:id" element={<ProductsByCategoryPage />}/> 
+          <Route path="/allproduct/subcategory/:id" element={<ProductsBySubCategoryPage />}/> 
           <Route path="/allproduct/brand/:id" element={<ProductsByBrandPage />}/>       
           <Route path="/admin/allproducts" element={<AdminAllproductsPage />}/>
           <Route path="/admin/add-product" element={<AdminAddProductPage />}/>
@@ -61,24 +78,37 @@ function App() {
           <Route path="/admin/allsubcategories" element={<AdminAllSubcatePage />}/>
           <Route path="/admin/orders/:id" element={<AdminOrdersDetailsPage />}/>
           <Route path="/admin/allbrands" element={<AdminAllBrandsPage />}/>
+          <Route path="/admin/allreviews" element={<AdminAllReviewsPage />}/>
           <Route path="/admin/add-brand" element={<AdminAddBrandPage />}/>
           <Route path="/admin/edit-brand/:id" element={< AdminEditBrandPage />}/>         
           <Route path="/admin/add-category" element={<AdminAddCategoryPage />}/>
           <Route path="/admin/edit-category/:id" element={<AdminEditCategoryPage />}/>
           <Route path="/admin/add-subcategory" element={<AdminAddSubcategoryPage />}/>
           <Route path="/admin/edit-subcategory/:id" element={<AdminEditSubCategoryPage />}/>
+          <Route path="/admin/add-coupon" element={<AdminAddCouponPage />}/> 
+          <Route path="/admin/edit-coupon/:id" element={<AdminEditCouponPage />}/> 
+          <Route path="/admin/allcoupons" element={<AdminAllCouponsPage />}/> 
+          <Route path="/admin/allusers" element={<AdminAllUsersPage />}/> 
+          <Route path="/admin/create-user" element={<AdminCreateUserPage/>}/> 
+          <Route path="/admin/edit-user-profile/:id" element={<AdminEditUserProfilePage/>}/> 
+          <Route path="/admin/change-user-pass/:id" element={<AdminEditUserPassPage/>}/> 
+          <Route path="/admin/creat-user" element={<AdminCreateUserPage/>}/> 
           <Route path="/user/allorders" element={<UserAllOrdersPage />}/>     
           <Route path="/user/favourite" element={<UserFavouritePage />}/>     
           <Route path="/user/favourite" element={<UserFavouritePage />}/>     
           <Route path="/user/address" element={<UserAddressPage />}/>     
-          <Route path="/user/edit-address" element={<UserEditAddressPage />}/>     
+          <Route path="/user/edit-address/:id" element={<UserEditAddressPage />}/>     
           <Route path="/user/add-address" element={<UserAddAddressPage />}/>     
           <Route path="/user/profile" element={<UserProfilePage />}/>     
-          <Route path="/user/edit-profile" element={<UserEditProfilePage />}/>  
+          <Route path="/user/edit-profile/:id" element={<UserEditProfilePage />}/>  
+         
+    
+          
 
         </Routes>
       </BrowserRouter>
       <Footer />
+     
     </div>
 
 

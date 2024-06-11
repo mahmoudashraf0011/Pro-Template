@@ -1,5 +1,5 @@
 import useDeleteData from "../../../hooks/useDeleteData";
-import useGetData from "../../../hooks/useGetData";
+import {useGetData} from "../../../hooks/useGetData";
 import { usePostDataWithDifferentFormat } from "../../../hooks/usePostData";
 import { usePutDataWithDifferentFormat } from "../../../hooks/useUpdateData";
 import { Add_Category, DELETE_CATEGORY, GET_SPECIFIC_CATEGORY, Get_All_Catagory,Get_Error, UPDATE_CATEGORY } from "../../type";
@@ -70,8 +70,8 @@ const getSpecificCategoryAction =  (id)=> async (dispatch)=>{
     }
     catch(e){
         dispatch({
-            type:Get_Error,
-            payload:"Error" + e,
+            type:GET_SPECIFIC_CATEGORY,
+            payload:e.response,
         })
     }
 

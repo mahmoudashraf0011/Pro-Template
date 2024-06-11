@@ -7,7 +7,7 @@ import { getAllProductsAction, getProductsPagesAction } from '../../redux/action
     const dispatch=useDispatch();
 
     useEffect(()=>{
-      dispatch(getAllProductsAction(3));
+      dispatch(getAllProductsAction(6));
     },[])
   
     const products=useSelector(state=> state.products.allProduct);
@@ -40,7 +40,7 @@ import { getAllProductsAction, getProductsPagesAction } from '../../redux/action
   }
 
     const onPress=(page)=>{
-      dispatch(getProductsPagesAction(3,page))
+      dispatch(getProductsPagesAction(6,page))
     }
     return [items,pagintate,onPress]
  }

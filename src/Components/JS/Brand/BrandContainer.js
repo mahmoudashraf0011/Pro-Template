@@ -15,7 +15,7 @@ export default function BrandContainer({title,btnTitle ,pathing}) {
             {
 
               load==false? brand.data?brand.data.slice(0,5).map((item,i)=>{
-                return <BrandCard img={item.image} key={i} id={item._id}/>
+                return <BrandCard img={item.image.length>100?item.image.slice(29):item.image} key={i} id={item._id}/>
               }):<Loding/>:null
 
 

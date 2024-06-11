@@ -64,7 +64,6 @@ export default function ShopProductHook() {
       if(products.data){
         items= products.data;
         length=products.results;
-        console.log(items);
  
      }else{
        items=[]
@@ -84,20 +83,20 @@ export default function ShopProductHook() {
       }
     } catch (error) { }
  
-    const onPress=(page)=>{
+    const onPress=async(page)=>{
      getStorage();
       sortType();
 
-      dispatch(getAllProductsWithSearchAction(`sort=${sortData}&limit=${limit}&page=${page}&keyword=${word}&${catesString}&${brandsString}${priceFromStr}${priceToStr}`));
+      await dispatch(getAllProductsWithSearchAction(`sort=${sortData}&limit=${limit}&page=${page}&keyword=${word}&${catesString}&${brandsString}${priceFromStr}${priceToStr}`));
     }
 
     const sortType=()=>{
       if(sortWord==''){
         sortData='';
       }else if(sortWord=="best"){
-        sortData="sold"
+        sortData="-sold"
       }else if(sortWord=="rate"){
-        sortData="ratingsQuantity"
+        sortData="-ratingsAverage"
       }else if(sortWord=="priceUP"){
         sortData="-price"
       }else if(sortWord=="priceDown"){

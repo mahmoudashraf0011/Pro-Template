@@ -5,21 +5,36 @@ import {allCategoryAction,getPagesAction} from '../../redux/actions/Category/all
 
 export default function AllCatrgoryPageHook() {
   const dispatch=useDispatch();
-  useEffect(()=>{
-    dispatch(allCategoryAction(8));
+  useEffect( ()=>{
+    const run =async ()=>{
+      await dispatch(allCategoryAction(8));
+
+    }
+    run();
   },[])
   
   const category=useSelector(state=> state.allCategory.category);
   const load=useSelector(state=> state.allCategory.loading);
 
+  let cates=[];
+  try {
+    if(category.data){
+      cates=category.data;
+    }
+  } catch (error) {}
+
   let pageCount=0;
-  if(category.paginationResult){
-    pageCount=category.paginationResult.numberOfPages;
-  }
+
+  try {
+    if(category.paginationResult){
+      pageCount=category.paginationResult.numberOfPages;
+    }
+  } catch (error) {}
+
 
 const getPage= (count)=>{
   dispatch(getPagesAction(count))
 }
   
-return [category,load,pageCount,getPage]
+return [category,load,pageCount,getPage,cates]
 }

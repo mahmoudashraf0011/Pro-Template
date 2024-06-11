@@ -11,3 +11,43 @@
 a{
   text-decoration: none;
 }
+.noResult{
+  background-color: #000;
+  color: #fff;
+  width: 70%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  text-align: center;
+ 
+}
+.up{
+    position: fixed;
+    display: inline-block;
+    bottom: 20px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+    background-color: #3367AB;
+    color: #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    outline: unset;
+    border: unset;
+    transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -ms-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    display: none;
+}
+.up:hover{
+    background-color: #000;
+}

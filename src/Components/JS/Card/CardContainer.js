@@ -8,9 +8,10 @@ import b4 from '../../../images/6.png'
 import '../../Styles/Card/Card.css'
 import GeneralCard from './GeneralCard'
 import Loding from '../Utility/Loading'
+import AllFavHook from '../../../LogicHooks/Favourite/AllFavHook'
 
-export default function CardContainer({title,btnTitle,pathing,products,id}) {
-  console.log(products);
+export default function CardContainer({title,btnTitle,pathing,products,id,q}) {
+  const [favitems,items] =AllFavHook();
   return (
     <section className='best' id={id}>
       <SectionTitle title={title} btnTitle={btnTitle} pathing={pathing}/>
@@ -19,7 +20,7 @@ export default function CardContainer({title,btnTitle,pathing,products,id}) {
 
             {
               products?products.map((product,i)=>{
-                return <GeneralCard id={product._id}imgSrc={product.imageCover} title={product.title} price={product.price} rate={product.ratingsQuantity}/>
+                return <GeneralCard favitems={favitems} q={q} id={product._id}imgSrc={product.imageCover} title={product.title} price={product.price} rate={product.ratingsAverage?product.ratingsAverage:0} product={product}/>
               }):<Loding/>
             }
         </div>

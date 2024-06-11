@@ -4,8 +4,9 @@ export default function NavbarLinks() {
   return (
     <div className='navLinks'>
       <ul>
-        <li ><a href='#home'>Home</a></li>
+        <li ><a href='/'>Home</a></li>
         <li ><a href='#cates'>Categories</a></li>
+        <li ><a href='/allproducts'>Products</a></li>
         <li ><a href='#brands'>Brands</a></li>
         <li><a href='#best'>Best Seller</a></li>
         <li><a href='#latest'>latest Fashion</a></li>

@@ -8,7 +8,7 @@ import AllCatrgoryPageHook from '../../../LogicHooks/Categories/AllCatrgoryPageH
 
 export default function AllcategoryPage() {
 
-  const [category,load,pageCount,getPage]=AllCatrgoryPageHook();
+  const [category,load,pageCount,getPage,cates]=AllCatrgoryPageHook();
   return (
     <div>
       <AllcategoryContainer category={category} load={load}/>

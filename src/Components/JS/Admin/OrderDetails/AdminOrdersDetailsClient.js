@@ -1,25 +1,43 @@
 import React from 'react'
 import '../../../Styles/Admin/AdminOrdersDetailsClient.css'
+import UpdateOrderStatusHook from '../../../../LogicHooks/Orders/UpdateOrderStatusHook';
+import { useParams } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 
-export default function AdminOrdersDetailsClient() {
+export default function AdminOrdersDetailsClient({order}) {
+  const {id}=useParams();
+  const [payStatus,deliverStatus,onChangePayStatus,onChangeDeliverStatus,onSubmitPay,onSubmitDeliver,payRef,deliverRef]=UpdateOrderStatusHook(id,order);
+
   return (
     <div className='ClientData'>
       <h4 className='ClientData_title'>Client details</h4>
       <div className='ClientData_personal'>
-        <p className='client_name'>Name : <span>Ahmed Saad</span></p>
-        <p className='client_mobile'>Mobile No. : <span>01005845839</span></p>
-        <p className='client_email'>Email : <span>Mss83@gmail.com</span></p>
+            <p className='client_name'>Name : <span>{order.user?order.user.name:""}</span></p>
+            <p className='client_mobile'>Phone : <span>{order.user?order.user.phone:""}</span></p>
+            <p className='client_email'>Email : <span>{order.user?order.user.email:""}</span></p>
+            <p className='client_name'>Address : <span>{order.shippingAddress?order.shippingAddress.details:""}-{
+            order.shippingAddress?order.shippingAddress.city:""} </span></p>
+            <p className='payment_method'>Payment Method : <span>{order.paymentMethodType}</span></p>
       </div>
-      <p className='ClientData_totalPrice'>Total <span>$ 600</span></p>
       <form className='ClientData_statusOrder'>
-        <select name="status" id="status">
-           <option value="Order" aria-readonly>Order Status</option>
-            <option value="Underway">Underway</option>
-            <option value="Been completed">Been Completed</option>
-            <option value="Cancellation">Cancellation</option>
-        </select>
-        <input type='submit' value="Save" />
+        <div className="ClientData_statusDeliver">
+          <select name="deliver" id="deliver" onChange={onChangeDeliverStatus} value={deliverStatus} ref={deliverRef}>
+            <option value="0" aria-readonly>Deliver Status</option>
+            <option value="false" aria-readonly>not done</option>
+            <option value="true">done</option>
+          </select>
+          <button className="SaveDeliver" onClick={onSubmitDeliver}>Save</button>
+        </div>
+        <div className="ClientData_statusDeliver">
+          <select name="pay" id="pay" onChange={onChangePayStatus} value={payStatus} ref={payRef}>
+            <option value="0" aria-readonly>Payment Status</option>
+            <option value="false" aria-readonly>not done</option>
+              <option value="true">done</option>
+          </select>
+          <button className="SavePay" onClick={onSubmitPay}>Save</button>
+        </div>
       </form>
+      <ToastContainer />
     </div>
   )
 }

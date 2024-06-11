@@ -62,3 +62,10 @@ p{
 .UserAddress_addAddress:hover{
     opacity: 0.7;
 }
+.UserAddressCard p{
+    font-weight: bold;
+    text-transform: capitalize
+}
+.UserAddressCard p > span{
+    font-weight: lighter;
+}

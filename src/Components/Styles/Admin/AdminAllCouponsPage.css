@@ -1,0 +1,49 @@
+p{
+    padding: 0;
+    margin: 0;
+}
+.coupon_Card{
+    background-color: #ddd;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    padding: 10px 20px;
+    box-shadow: 1px 1px 3px 3px #ddd;
+}
+.coupon_Card_up{
+    display: flex;
+    justify-content: space-between;
+}
+.coupon_Card_btns > li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+}
+.coupon_Card_btns > li >a{
+    text-decoration: none;
+    color: #000;
+}
+.coupon_Card_btns > li:hover{
+    opacity: 0.7;
+}
+.coupon_Card p{
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.coupon_Card p > span{
+    font-weight: lighter;
+}
+.coupon_card_name{
+
+}

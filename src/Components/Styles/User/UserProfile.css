@@ -56,3 +56,31 @@
 .UserProfile_changePass_submit:hover{
     opacity: 0.5;
 }
+.UserProfile .delete{
+    width: 90%;
+    display: block;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    transition: color 0.4s ,background-color 0.5s;
+    -webkit-transition: color 0.4s ,background-color 0.5s;
+    -moz-transition: color 0.4s ,background-color 0.5s;
+    -ms-transition: color 0.4s ,background-color 0.5s;
+    -o-transition: color 0.4s ,background-color 0.5s;
+}
+.UserProfile .delete:hover{
+    background-color: #000;
+    color: #fff;
+}
+.UserProfile_card p{
+    font-weight: bold;
+}
+.UserProfile_card p > span{
+    font-weight: lighter;
+}

@@ -58,6 +58,9 @@ const  res=useSelector(state=>state.subCategory.subcategory);
       }, 3000);
       if(res.status === 201){
         Notify("The SubCategory is added successfully!","success")
+        setTimeout(() => {
+          window.location.href="/admin/allsubcategories";
+        }, 2000)
       }else{
         Notify("Failed to add SubCategory!","error")
 

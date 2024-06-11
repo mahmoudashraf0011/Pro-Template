@@ -15,73 +15,101 @@ export default function ProductDetailsHook(id) {
   const product=useSelector(state=>state.products.specificProduct)
 
   let item=[];
-  if(product.data){
-    item=product.data
-  }else{
-    item = []
-  }
+
+  try {
+    if(product.data){
+      item=product.data
+    }else{
+      item = []
+    }
+  } catch (error) {}
+
 
   let imgs=[];
  
-  if(product.data){
-    imgs= item.images.map((img)=>{
-          return{
-              original: img,
-              thumbnail: img
-          }
+  try {
+    if(product.data){
+      imgs= item.images.map((img)=>{
+            return{
+                original: img,
+                thumbnail: img
+            }
+  
+        
+    })
+    }else{
+      imgs=[]
+    }
+  } catch (error) {}
 
-      
-  })
-  }else{
-    imgs=[]
-  }
 
   
-  useEffect(()=>{
-    if(product.data){
-      if(item.category){
-        dispatch(getSpecificCategoryAction(item.category))
-      }
+  const run = async()=>{
+ 
+
   
       if(item.brand){
-        dispatch(getSpecificBrandAction(item.brand))
+       await  dispatch(getSpecificBrandAction(item.brand))
       }
 
       if(item.category){
-        dispatch(getLikeProductAction(item.category))
+       await dispatch(getLikeProductAction(item.category))
+       await dispatch(getSpecificCategoryAction(item.category))
       }
 
+      if(item.category){
+       await dispatch(getSpecificCategoryAction(item.category))
+      
+      }
     }
+  
+  useEffect(()=>{
+    setTimeout(() => {
+      run()
+    }, 1000);
 
-  },[product.data])
+  },[item])
 
   const category=useSelector(state=>state.allCategory.specificCategory);
   const brandItem=useSelector(state=>state.allBrand.specificBrand);
   const likeProducts=useSelector(state=>state.products.likeProduct);
 
   let cat=[];
-  if(category.data){
-    cat =category.data.name
-  }else{
-    cat = []
-  }
+  try {
+    if(category.data){
+      cat =category.data.name
+
+    }else{
+      cat = []
+    }
+  
+  } catch (error) {}
+
 
   let brand=[];
-  if(brandItem.data){
-    brand =brandItem.data.name
-  }else{
-    brand = []
+  try {
+    if(brandItem.data){
+      brand =brandItem.data.name
+    }else{
+      brand = []
+    }
+  } catch (error) {
+    
   }
+
+
 
  // get all recommended products
   let likes=[];
+
+try {
   if(likeProducts.data){
     likes =likeProducts.data.slice(0,4)
   }else{
     likes = []
   }
 
-
+} catch (error) {}
 
 
   

@@ -1,10 +1,13 @@
-import { ADD_PRODUCT,DELETE_PRODUCT,GET_ALL_PRODUCT,GET_ALL_PRODUCT_BY_BRAND,GET_ALL_PRODUCT_BY_CATEGORY,GET_LIKE_PRODUCTS,GET_SPECIFIC_PRODUCT,Get_All_Catagory_SEARCH,Get_All_PRODUCT_SEARCH,Get_Error, UPDATE_PRODUCT } from "../../type";
+import { ADD_PRODUCT,DELETE_PRODUCT,GET_ALL_PRODUCT,GET_ALL_PRODUCT_BY_BRAND,GET_ALL_PRODUCT_BY_CATEGORY,GET_ALL_PRODUCT_BY_SUBCATEGORY,GET_Best_Seller_PRODUCTS,GET_LIKE_PRODUCTS,GET_RATED_PRODUCTS,GET_SPECIFIC_PRODUCT,Get_All_Catagory_SEARCH,Get_All_PRODUCT_SEARCH,Get_Error, UPDATE_PRODUCT } from "../../type";
 
 const initial ={
     product:[],
     allProduct:[],
+    bestProducts:[],
+    ratedProducts:[],
     allProductSearch:[],
     allproductByCategory:[],
+    allproductBySubCategory:[],
     allproductByBrand:[],
     specificProduct:[],
     likeProduct:[],
@@ -28,6 +31,18 @@ export const ProductReducer=(state=initial,action)=>{
                     allProduct:action.payload,
                     loading:false
                 }
+        case GET_RATED_PRODUCTS:
+            return{
+                ...state,
+                ratedProducts:action.payload,
+                loading:false
+            }
+        case GET_Best_Seller_PRODUCTS:
+            return{
+                ...state,
+                bestProducts:action.payload,
+                loading:false
+            }
         case Get_All_PRODUCT_SEARCH:
             return{
                 ...state,
@@ -40,6 +55,12 @@ export const ProductReducer=(state=initial,action)=>{
                 allproductByCategory:action.payload,
                 loading:false
             }
+    case GET_ALL_PRODUCT_BY_SUBCATEGORY:
+        return{
+            ...state,
+            allproductBySubCategory:action.payload,
+            loading:false
+        }
         case GET_ALL_PRODUCT_BY_BRAND:
                 return{
                     ...state,

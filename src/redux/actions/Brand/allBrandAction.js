@@ -1,5 +1,5 @@
 import useDeleteData from "../../../hooks/useDeleteData";
-import useGetData from "../../../hooks/useGetData";
+import {useGetData} from "../../../hooks/useGetData";
 import { usePostDataWithDifferentFormat } from "../../../hooks/usePostData";
 import { usePutDataWithDifferentFormat } from "../../../hooks/useUpdateData";
 import { Add_Brand, DELETE_BRAND, GET_SPECIFIC_BRAND, Get_All_Brand,Get_Error, UPDATE_BRAND } from "../../type";

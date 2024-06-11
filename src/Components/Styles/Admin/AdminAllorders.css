@@ -7,7 +7,7 @@ p{
     
 }
 .AdminAllordersItem{
-   background-color: #ddd;
+   background-color:#3367AB;
    padding: 20px;
    display: flex;
    border-radius: 20px ;
@@ -85,7 +85,8 @@ p{
     align-items: center;
 }
 .AdminAllordersDataUpDown_price{
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: bold;
 }
 .AdminAllordersDataUpDown_quantity > input{
     width: 30%;
@@ -102,8 +103,91 @@ p{
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     display: inline-block;
+    transition: background-color 0.5s,color 0.5s ;
+    -webkit-transition: background-color 0.5s,color 0.5s ;
+    -moz-transition: background-color 0.5s,color 0.5s ;
+    -ms-transition: background-color 0.5s,color 0.5s ;
+    -o-transition: background-color 0.5s,color 0.5s ;
 }
 .AdminAllordersData_Details:hover{
     background-color: #fff;
     color: #000;
+}
+.adminOrder_userData > p{
+    font-weight: bold;
+}
+.adminOrder_userData > p > span{
+    font-weight: lighter;
+}
+.AdminAllordersData_up{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.AdminAllordersData_up > i{
+    font-size: 25px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  
+}
+
+.Filter_orders{
+    background-color: #000;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+.Filter_orders > form{
+     display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    grid-gap: 20px;
+
+
+}
+.Filter_orders > form > div {
+    flex: 3;
+    
+}
+.Filter_orders > form > div >  select{
+    width: 100%;
+    border: unset;
+    outline: unset;
+    padding: 10px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.Filter_orders > form  >  button{
+    width: 30%;
+    padding: 5px;
+    flex: 1;
+    background-color: #3367AB;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+    transition: border-radius 0.4s;
+    -webkit-transition: border-radius 0.4s;
+    -moz-transition: border-radius 0.4s;
+    -ms-transition: border-radius 0.4s;
+    -o-transition: border-radius 0.4s;
+}
+.Filter_orders > form  >  button:hover{
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }

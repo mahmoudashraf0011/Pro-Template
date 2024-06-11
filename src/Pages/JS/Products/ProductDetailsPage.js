@@ -10,12 +10,17 @@ export default function ProductDetailsPage({products}) {
 
   const [item , imgs,cat,brand,likes]   =ProductDetailsHook(id);
 
+   // console.log(item.reviews[0].rating);
+   // console.log(item.reviews[0].review);
+    //console.log(item.reviews[0].user.name);
+
+
   return (
-    <div>
-     <CategorySearch /> 
+    <div style={{marginBottom:"80px"}}>
+   
      <ProductDetailsComtainer />
-     <RatingContainer />
-     <CardContainer title="Recommended Products" products={likes}/>
+     <RatingContainer  rateVal={item.ratingsAverage} rateCount={item.ratingsQuantity} reviews={item.reviews}/>
+     <CardContainer title="Recommended Products" products={likes} q="true"/>
     </div>
   )
 }

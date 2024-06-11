@@ -11,7 +11,7 @@ export default function UserProfilePage() {
         <div className='userPage_items'>
             <UserSidebar />
             <div className='userPage_item'>
-                <SectionTitle title="Edit Address" />
+                <SectionTitle title="Manage Personal Profile" />
                 <UserProfile />
             </div>
         </div>

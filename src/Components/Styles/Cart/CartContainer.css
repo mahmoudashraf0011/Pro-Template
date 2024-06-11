@@ -4,6 +4,7 @@ p{
 }
 .cartItems{
     display: flex;
+    justify-content: space-between;
     
 }
 .cartItem{
@@ -19,26 +20,28 @@ p{
    margin-bottom: 20px;
 }
 .cartImg{
-    width: 30%;
-    height: 320px;
+    width: 33%;
+    height: 230px;
 }
 .cartImg > img{
     width: 100%;
     height: 100%;
 }
 .cartData{
-    padding-top: 30px;
+margin-left: 20px;
     width: 100%;
+    margin-top: 5px;
 }
 .cartDataUp{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 .cartDataUp_catagory{
     font-size: 18px;
-    font-weight: lighter;
+    font-weight: bold;
+    text-transform: capitalize;
 }
 .cartDataUp_delete{
     list-style: none;
@@ -49,14 +52,16 @@ p{
 }
 .cartData_desc{
     margin-bottom: 7px;
+    width: 70%;
 }
 .cartData_rate{
     color: orange;
     display: block;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 .cartData_brand {
-    margin-bottom: 5px;
+    margin-bottom: 7px;
+    text-transform: capitalize;
 }
 .cartData_brand > span{
     font-size: 20px;
@@ -71,7 +76,7 @@ p{
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 .cartDataUpDown{
     display: flex;
@@ -81,12 +86,16 @@ p{
 .cartDataUpDown_price{
     font-size: 20px;
 }
+.cartDataUpDown_quantity{
+    font-weight: bold;
+}
 .cartDataUpDown_quantity > input{
     width: 30%;
+    padding: 5px 7px;
 }
 .checkout{
     background-color: #ddd;
-    height: 200px;
+    height: 250px;
     margin-left: 50px;
     padding: 15px 10px ;
     text-align: center;
@@ -100,6 +109,7 @@ p{
     width: 82%;
     padding: 10px;
     text-align: center;
+
 }
 .cartCoupon >button{
     height: 47px;
@@ -113,6 +123,13 @@ p{
     -ms-transition: opacity 0.5s;
     -o-transition: opacity 0.5s;
 }
+.checkout{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
 .checkout_price{
     border: 1px solid #bcb6b6;
     padding: 10px 0;
@@ -123,7 +140,12 @@ p{
     -o-border-radius: 10px;
     background-color: #fff;
 }
-.checkout_purchase{
+.checkout_RemoveCart{
+    width: 100%;
+    display: block;
+    margin-top: 4px;
+}
+.checkout_purchase,.checkout_RemoveCart{
     border: 1px solid #bcb6b6;
     padding: 10px 0;
     border-radius: 10px;
@@ -142,9 +164,22 @@ p{
     -ms-transition: opacity 0.5s;
     -o-transition: opacity 0.5s;
 }
-.checkout_purchase:hover{
+.checkout_purchase:hover,.checkout_RemoveCart:hover{
     opacity: 0.5;
 }
 .cartCoupon >button:hover{
+    opacity: 0.5;
+}
+.applyQuntity{
+    background-color: #000;
+    color: #fff;
+    padding: 5px 15px;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+}
+.applyQuntity:hover{
     opacity: 0.5;
 }

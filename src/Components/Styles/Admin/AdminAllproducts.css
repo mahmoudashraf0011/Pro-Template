@@ -88,3 +88,7 @@
 .AdminAllProduct_item_img > a > img{
  width : 100%
 }
+.adminAllOrdersDown{
+    display: flex;
+    justify-content: space-between;
+}

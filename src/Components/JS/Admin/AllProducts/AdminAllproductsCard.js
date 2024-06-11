@@ -13,9 +13,9 @@ export default function AdminAllproductsCard({item}) {
     <div className='AdminAllProduct_item'>
         <Modal show={show} onHide={handleClose}>
           <Modal.Header closeButton>
-            <Modal.Title>Confirm Deletion</Modal.Title>
+            <Modal.Title style={{color:"black"}}>Confirm Deletion</Modal.Title>
           </Modal.Header>
-          <Modal.Body>Are you sure to delete the product?</Modal.Body>
+          <Modal.Body style={{color:"black"}}>Are you sure to delete the product?</Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={handleClose}>
               Close
@@ -34,7 +34,16 @@ export default function AdminAllproductsCard({item}) {
       </div>
       <h3 className='AdminAllProduct_item_title'>{item.title}</h3>
       <div className='AdminAllProduct_item_more'>
-        <span className='AdminAllProduct_item_price'>$ <span>{item.price}</span></span>
+        <div className='AdminAllProduct_item_price'>
+        {
+            item.priceAfterDiscount?(
+              <div><span style={{fontWeight:"bold"}}>${item.priceAfterDiscount}</span> <span style={{textDecoration:"line-through",fontSize:"14px"}}>${item.price}</span></div>
+            ):(
+              <span>${item.price}</span> 
+            )
+          }
+          
+        </div>
         <span className='AdminAllProduct_item_rate'>{item.ratingsQuantity} <i className="fa-solid fa-star"></i></span>
       </div>
       <ToastContainer />

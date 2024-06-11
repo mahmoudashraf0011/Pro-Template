@@ -1,5 +1,5 @@
 import useDeleteData from "../../../hooks/useDeleteData";
-import useGetData from "../../../hooks/useGetData";
+import {useGetData} from "../../../hooks/useGetData";
 import { usePostData } from "../../../hooks/usePostData";
 import { usePutDataWithDifferentFormat, usePutDate } from "../../../hooks/useUpdateData";
 import { Add_Subcategory,DELETE_SUBCATEGORY,GET_ALL_SUBCATEGORY,GET_ALL_SUBCATEGORY_For_CATEGORY,GET_SPECIFIC_SUBCATEGORY,Get_Error, UPDATE_SUBCATEGORY } from "../../type";

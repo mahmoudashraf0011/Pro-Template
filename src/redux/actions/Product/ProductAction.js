@@ -1,8 +1,8 @@
 import useDeleteData from "../../../hooks/useDeleteData";
-import useGetData from "../../../hooks/useGetData";
+import {useGetData} from "../../../hooks/useGetData";
 import { usePostDataWithDifferentFormat } from "../../../hooks/usePostData";
 import { usePutDataWithDifferentFormat } from "../../../hooks/useUpdateData";
-import { ADD_PRODUCT,DELETE_PRODUCT,GET_ALL_PRODUCT,GET_ALL_PRODUCT_BY_BRAND,GET_ALL_PRODUCT_BY_CATEGORY,GET_LIKE_PRODUCTS,GET_SPECIFIC_PRODUCT,Get_All_Catagory_SEARCH,Get_All_PRODUCT_SEARCH,Get_Error, UPDATE_PRODUCT } from "../../type";
+import { ADD_PRODUCT,DELETE_PRODUCT,GET_ALL_PRODUCT,GET_ALL_PRODUCT_BY_BRAND,GET_ALL_PRODUCT_BY_CATEGORY,GET_ALL_PRODUCT_BY_SUBCATEGORY,GET_Best_Seller_PRODUCTS,GET_LIKE_PRODUCTS,GET_RATED_PRODUCTS,GET_SPECIFIC_PRODUCT,Get_All_Catagory_SEARCH,Get_All_PRODUCT_SEARCH,Get_Error, UPDATE_PRODUCT } from "../../type";
 
 const addProductAction =  (data)=> async (dispatch)=>{
     try{
@@ -72,6 +72,24 @@ const getAllProductsByCategoryAction =  (id,limit)=> async (dispatch)=>{
         dispatch({
             type:Get_Error,
             payload:"Error" + e,
+        })
+    }
+    
+
+
+}
+const getAllProductsBySubCategoryAction =  (id,limit)=> async (dispatch)=>{
+    try{
+        const response=await useGetData(`/api/v1/products?subcategory=${id}&limit=${limit}`);
+        dispatch({
+            type:GET_ALL_PRODUCT_BY_SUBCATEGORY,
+            payload:response
+        })
+    }
+    catch(e){
+        dispatch({
+            type:GET_ALL_PRODUCT_BY_SUBCATEGORY,
+            payload:e.response,
         })
     }
     
@@ -153,6 +171,7 @@ const getProductsPagesForCategoryAction =  (id,limit,page)=> async (dispatch)=>{
 
 
 }
+
 const getProductsPagesForBrandAction =  (id,limit,page)=> async (dispatch)=>{
     try{
         const response=await useGetData(`/api/v1/products?brand=${id}&limit=${limit}&page=${page}`);
@@ -171,7 +190,59 @@ const getProductsPagesForBrandAction =  (id,limit,page)=> async (dispatch)=>{
 
 
 }
+const getProductsPagesForSubCategoryAction =  (id,limit,page)=> async (dispatch)=>{
+    try{
+        const response=await useGetData(`/api/v1/products?subcategory=${id}&limit=${limit}&page=${page}`);
+        dispatch({
+            
+            type:GET_ALL_PRODUCT_BY_SUBCATEGORY,
+            payload:response
+        })
+    }
+    catch(e){
+        dispatch({
+            type:GET_ALL_PRODUCT_BY_SUBCATEGORY,
+            payload:e.response,
+        })
+    }
 
+
+}
+
+const getHighRatedProductsAction =  ()=> async (dispatch)=>{
+    try{
+        const response=await useGetData(`/api/v1/products?sort=-ratingsAverage`);
+        dispatch({
+            type:GET_RATED_PRODUCTS,
+            payload:response
+        })
+    }
+    catch(e){
+        dispatch({
+            type:GET_RATED_PRODUCTS,
+            payload:e.response,
+        })
+    }
+
+
+}
+const getBestSellerProductsAction =  ()=> async (dispatch)=>{
+    try{
+        const response=await useGetData(`/api/v1/products?sort=-sold`);
+        dispatch({
+            type:GET_Best_Seller_PRODUCTS,
+            payload:response
+        })
+    }
+    catch(e){
+        dispatch({
+            type:GET_Best_Seller_PRODUCTS,
+            payload:e.response,
+        })
+    }
+
+
+}
 const getAllProductsWithSearchAction =  (qs)=> async (dispatch)=>{
     try{
         const response=await useGetData(`/api/v1/products?${qs}`);
@@ -227,4 +298,4 @@ const updateProductAction =  (id,data)=> async (dispatch)=>{
 }
 
 
-export {addProductAction , getAllProductsAction,getSpecificProductAction,getLikeProductAction,getProductsPagesAction,deleteProductAction , updateProductAction,getAllProductsWithSearchAction,getAllProductsByCategoryAction,getProductsPagesForCategoryAction,getAllProductsByBrandAction,getProductsPagesForBrandAction}
+export {addProductAction , getAllProductsAction,getSpecificProductAction,getLikeProductAction,getProductsPagesAction,deleteProductAction , updateProductAction,getAllProductsWithSearchAction,getAllProductsByCategoryAction,getProductsPagesForCategoryAction,getAllProductsByBrandAction,getProductsPagesForBrandAction,getAllProductsBySubCategoryAction,getProductsPagesForSubCategoryAction,getBestSellerProductsAction,getHighRatedProductsAction}

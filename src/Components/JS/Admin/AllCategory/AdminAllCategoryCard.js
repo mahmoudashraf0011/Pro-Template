@@ -9,11 +9,11 @@ export default function AdminAllCategoryCard({item}) {
   return (
     <div className='CatagoryItem'>
         
-        <Modal show={show} onHide={handleClose}>
+        <Modal show={show} onHide={handleClose} style={{backgroundColor:"transparent"}}>
           <Modal.Header closeButton>
-            <Modal.Title>Confirm Deletion</Modal.Title>
+            <Modal.Title style={{color:"black"}}>Confirm Deletion</Modal.Title>
           </Modal.Header>
-          <Modal.Body>Are you sure to delete this Category?</Modal.Body>
+          <Modal.Body style={{color:"black"}}>Are you sure to delete this Category?</Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={handleClose}>
               Close
@@ -28,7 +28,7 @@ export default function AdminAllCategoryCard({item}) {
         <button className='changeCat' onClick={handleShow}>Delete</button>
      </div>
       <div className='catagoryItemImg'>
-        <img src={item.image} alt='catagory' />
+        <img src={item.image.length>100?item.image.slice(33):item.image} alt='catagory' />
       </div>
       <h3 className='catagoryItemTitle'>{item.name}</h3>
 

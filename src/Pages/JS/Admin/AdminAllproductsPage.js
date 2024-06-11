@@ -9,7 +9,6 @@ import ViewAllProductsAdminHook from '../../../LogicHooks/Admin/ViewAllProductsA
 
 export default function AdminAllproductsPage() {
   const [items,pagintate,onPress]=ViewAllProductsAdminHook();
-  console.log(items);
   return (
     <div className='AdminPage'>
         <div className='container'>
@@ -20,7 +19,7 @@ export default function AdminAllproductsPage() {
                     <AdminAllproducts products={items}/>
                 </div>
             </div>
-            <Paginate pageCount={pagintate} onPress={onPress}/>
+            <Paginate pageCount={pagintate} onPress={onPress} />
         </div>
 
 

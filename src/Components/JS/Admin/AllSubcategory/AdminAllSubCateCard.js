@@ -21,9 +21,9 @@ export default function AdminAllSubCateCard({item}) {
         
         <Modal show={show} onHide={handleClose}>
           <Modal.Header closeButton>
-            <Modal.Title>Confirm Deletion</Modal.Title>
+            <Modal.Title style={{color:"black"}}>Confirm Deletion</Modal.Title>
           </Modal.Header>
-          <Modal.Body>Are you sure to delete this SubCategory?</Modal.Body>
+          <Modal.Body style={{color:"black"}}>Are you sure to delete this SubCategory?</Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={handleClose}>
               Close

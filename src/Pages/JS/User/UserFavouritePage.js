@@ -16,7 +16,7 @@ export default function UserFavouritePage() {
                     <UserFavourite />
                 </div>
             </div>
-            <Paginate />
+       
         </div>
 
 

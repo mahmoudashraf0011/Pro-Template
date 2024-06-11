@@ -130,7 +130,13 @@ export default function AddProductHook() {
               Notify("Please Complete Data!","warn");
               return;
           }
-          console.log(catID);
+          if(priceBefore < priceAfter){
+            Notify("Price After Discount must be < Price before Discount","error");
+            return;
+          }
+          if(priceBefore == priceAfter){
+            setPriceAfter(0)
+          }
           const imageCover=dataURLtoFile(images[0],Math.random()+".png");
           const imagesArr=Array.from(Array(Object.keys(images).length).keys()).map((img,i)=>{
               return dataURLtoFile(images[i],Math.random()+".png")
@@ -140,6 +146,9 @@ export default function AddProductHook() {
           formData.append("description",desc);
           formData.append("quantity",qty);
           formData.append("price",priceBefore);
+          if(priceBefore != priceAfter){
+            formData.append("priceAfterDiscount",priceAfter);
+          }
           formData.append("imageCover",imageCover);
           formData.append("category",catID);
           formData.append("brand",brandID);
@@ -158,6 +167,7 @@ export default function AddProductHook() {
       }
       useEffect(()=>{
           if(load==false){
+
               setImages([])
               setName("");
               setDesc("")
@@ -181,7 +191,7 @@ export default function AddProductHook() {
   
               setTimeout(() => {
                   setLoad(true)
-              }, 2000);
+              }, 500);
 
           }
       

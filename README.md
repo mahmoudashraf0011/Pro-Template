@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# pro Templete
+    - E-commerce Templete
+    - https://mahmoudashraf0011.github.io/Pro-Template/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Used Languages
+    - HTML , CSS , Bootstrap ,JavaScript , React and Redux
+# Folders (src)
+    - images 
+        - This folder contains all images of the project
+    - API
+        - This folder contains Base URL of Project (axios)
+    - Components
+        - This folder contains all Components of Project
+    - Pages
+        - This folder contains all Pages of Project
+    - LogicHooks
+        - This folder contains all the code files that are applied to the pages and components of the project
+    - hooks
+        - This folder contains Custom hooks of Project for handle Data (get,post,delete,put)
+    - redux
+        - This folder contains everything related to Redux (store,actions,reducers)
 
-## Available Scripts
+# Functionalities of  Project
+## General Visitor (Without Login User)
+    - He can log in, register and Rest the password by Forget Password
+    - He can see all Products and it Detalis
+    - He can see all Categories 
+    - He can see all Brands 
+    - He can make Filter Products by (Category, brand, search bar, or all together)
+    - He can make Sort products by (price, high rate, best selling)
 
-In the project directory, you can run:
+## Logged User
+    - He can logout
+    - He can see his profile and update it (name,email,..)
+    - He can change his password
+    - He can see all his addresses
+    - He can create , delete and update address
+    - He can see all his Favourites products
+    - He can add product to Whishlist and delete it 
+    - He can add create , delete and update and show Review on Products
+    - He can see all his cart products  
+    - He can add product to Cart and remove it
+    - He can update Quantity of product Cart
+    - He can clear Cart
+    - He can apply Coupon to cart 
+    - He can make a purchase by 
+        - Cash (Upon receipt)
+        - Online Card (not Recommended)
+    - He can see all his orders
+    - He can check order status
+        - Pay status
+        - Delivery status
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Admin
+    - He can logout
+    - He can see all Products
+    - He can create , delete and update Product
+    - He can see all Categories
+    - He can create , delete and update Category     
+    - He can see all Subcategories
+    - He can create , delete and update Subcategory 
+    - He can see all Brands
+    - He can create , delete and update Brand 
+    - He can see all orders
+    - He can Update order status
+        - Pay status
+        - Delivery status
+    - He can see all Coupons
+    - He can create , delete and update Coupon 
+    - He can see all Reviews and Delete it
+    - He can see all Users
+    - He can create and delete User
+    - He can Update User Profile (name,..) and User Password

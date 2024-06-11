@@ -13,7 +13,7 @@ export default function AllcategoryContainer({category,load,id}) {
         {
 
           load==false? category.data?category.data.map((item,i)=>{
-            return <CatagoryCard key={i} imgSrc={item.image} catagory={item.name} id={item._id}/>
+            return <CatagoryCard key={i} imgSrc={item.image.length>100?item.image.slice(33):item.image} catagory={item.name} id={item._id}/>
           }):<Loding/>:null
 
 

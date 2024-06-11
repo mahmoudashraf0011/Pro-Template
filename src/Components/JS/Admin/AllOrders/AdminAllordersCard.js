@@ -1,30 +1,35 @@
 import React from 'react'
 import m from '../../../../images/other/mobile.png'
 import { Link } from 'react-router-dom'
-export default function AdminAllordersCard() {
+export default function AdminAllordersCard({order}) {
+ 
   return (
-    <div className='AdminAllordersItem'>
-        <div className='AdminAllordersImg'>
-            <img src={m} alt="mobile" />
-        </div>
+    <div className='AdminAllordersItem' style={{backgroundColor:order.isPaid==true && order.isDelivered== true?"#3367AB":"#ddd" }} >
         <div className='AdminAllordersData'>
-            <div className='AdminAllordersDataUp'>
-                <p className='AdminAllordersDataUp_orderID'>Order No. #2321</p>
-                <li className='AdminAllordersDataUp_delete'><i className="fa-regular fa-trash-can"></i> Delete</li>
+            <div className='AdminAllordersData_up'>
+                <h5>Order No. <span>{order.id}</span></h5>
+                {
+                    order.isPaid==true && order.isDelivered ==true?<i class="fa-solid fa-check"></i>:""
+                }
+                
             </div>
-            <h4 className='AdminAllordersDataUp_catagory'>Electronics</h4>
-            <p className='AdminAllordersData_desc'>Samsung Galaxy A15 Dual SIM 4GB Ram+128GB ROM (6.5 Inches) (4G LTE) - Blue Black</p>
-            <span className='AdminAllordersData_rate'>4.5 <i className="fa-solid fa-star"></i></span>
-            <p className='AdminAllordersData_brand'>Brand : <span>Samsung</span></p>
-            <div className='AdminAllordersData_color'></div>
+            <div className='adminOrder_userData'>
+                <p>Requested by : <span> {order.user.name} && {order.user.email}</span></p>
+        
+            </div>
             <div className='AdminAllordersDataUpDown'>
-                <form className='AdminAllordersDataUpDown_quantity'>
-                    <label for="quantity">Quantity : </label>
-                    <input id='quantuty' type='number' />
-                </form>
-                <p className='AdminAllordersDataUpDown_price'>$ <span>300</span></p>
+                <div className='status'>
+                    <p className='Deliver_status'>Deliver Status : <span>{order.isDelivered == false?"Not Done":"Done"}</span></p>
+                    <p className='Pay_status'> Payment Status : <span>{order.isPaid == false?"Not Done":"Done"}</span></p>
+                    <p className='payWay_status'>Payment Method : <span>{order.paymentMethodType}</span></p>
+                </div>
+             
             </div>
-            <Link to="/admin/orders/:id" className='AdminAllordersData_Details'>Show Details</Link>
+            <div className='adminAllOrdersDown'>
+                <Link to={`/admin/orders/${order._id}`} className='AdminAllordersData_Details'>Show Details</Link>
+                <p className='AdminAllordersDataUpDown_price'>$ <span>{order.totalOrderPrice}</span></p>
+            </div>
+     
         </div>
     </div>
   )

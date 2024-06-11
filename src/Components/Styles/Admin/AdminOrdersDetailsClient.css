@@ -3,8 +3,8 @@ p{
     padding: unset;
 }
 .ClientData{
-    margin-top: 30px;
-    margin-left: 28%;
+
+   
     background-color: #ddd;
     padding: 20px;
     border-radius: 15px;
@@ -24,6 +24,7 @@ p{
 }
 .ClientData_personal >p{
     margin-bottom: 10px;
+    font-weight: bold;
 }
 .ClientData_personal >p > span{
     font-weight: lighter;
@@ -57,7 +58,28 @@ p{
     -ms-border-radius: 15px 10px;
     -o-border-radius: 15px 10px;
 }
-.ClientData_statusOrder  > input{
+
+
+.ClientData_statusOrder{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.ClientData_statusOrder > div{
+    width: 100%;
+}
+.ClientData_statusOrder > div >select{
+    width: 70%;
+    padding: 12px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: 1px solid #ddd;
+    outline: unset;
+}
+.ClientData_statusOrder > div > button{
     outline: unset;
     padding: 12px;
     border: 1px solid #fff;
@@ -76,6 +98,6 @@ p{
     -ms-transition: opacity 0.5s;
     -o-transition: opacity 0.5s;
 }
-.ClientData_statusOrder  > input:hover{
-    opacity: 0.7;
+.ClientData_statusOrder > div > button:hover{
+    opacity: 0.5;
 }
