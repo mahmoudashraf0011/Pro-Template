@@ -3,7 +3,7 @@
     - https://mahmoudashraf0011.github.io/Pro-Template/
 
 # Used Languages
-    - HTML , CSS , Bootstrap ,JavaScript , React and Redux
+    - HTML , CSS , Bootstrap ,JavaScript , React , React Hooks and Redux
 # Folders (src)
     - images 
         - This folder contains all images of the project
