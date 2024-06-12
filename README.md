@@ -1,5 +1,5 @@
-# pro Templete
-    - E-commerce Templete
+# pro Website
+    - E-commerce Website
     - https://mahmoudashraf0011.github.io/Pro-Template/
 
 # Used Languages
